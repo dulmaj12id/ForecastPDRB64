@@ -6,8 +6,8 @@ ForecastPDRB64 merupakan sebuah R Package.
 
 ## Cara Penggunaan
 1. Siapkan template excel sesuai contoh
-2. Gunakan file `Jalan dengan ini.R` untuk menjalankan proses estimasi. File `Jalan dengan ini.R` dapat diunduh pada: 
-[Uploading Jalan dengan ini.R…]()
+2. Gunakan file `Jalan dengan ini.R` untuk menjalankan proses estimasi. File `Jalan dengan ini.R` dapat diunduh pada: [
+[Uploading Jalan dengan ini.R](https://github.com/dulmaj12id/ForecastPDRB64/blob/main/Jalan%20dengan%20ini.R)
 
 3. Install package yang dibutuhkan:
   `install.packages(c("ggplot2", "forecast", "openxlsx", "tibble", "BiocManager", "devtools"))`
