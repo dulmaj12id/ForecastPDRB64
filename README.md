@@ -1,2 +1,2 @@
 # ForecastPDRB64
-Forecast PDRB
+ForecastPDRB64 merupakan sebuah R Package yang dibangun untuk membantu dalam 
