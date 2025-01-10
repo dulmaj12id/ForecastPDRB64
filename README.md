@@ -1,5 +1,6 @@
 # ForecastPDRB64
 ForecastPDRB64 merupakan sebuah R Package.
+Gunakan file *.ipynb pada: https://github.com/dulmaj12id/ForecastPDRB64-Notebook jika lebih nyaman menggunakan Jupyter Notebook
 
 ## Persiapan
 
