@@ -86,7 +86,7 @@ pdrb.forecast.es <- function(data_df) {
   fitted_df <- data.frame()
   fitted_val <- data.frame()
   plot_list <- list()
-  folder_image <- choose.dir(default = "", caption = "Select folder to save the ARIMA Plot file")
+  folder_image <- choose.dir(default = "", caption = "Select folder to save the Exp Smoothing Plot file")
 
   # Melakukan forecasting untuk setiap variabel
   for (i in 1:ncol(data_df)) {

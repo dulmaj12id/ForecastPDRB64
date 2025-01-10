@@ -1,7 +1,7 @@
 Package: ForecastPDRB64
 Type: Package
 Title: Melakukan estimasi peramalan data pdrb
-Version: 0.1.0
+Version: 1.1.0
 Authors@R: c(
     person(
       "Majid", "Majid",

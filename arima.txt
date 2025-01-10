@@ -1,0 +1,1261 @@
+----------------------------------------------------------------------- 
+Pertanian,_Kehutanan,_dan_Perikanan 
+----------------------------------------------------------------------- 
+Series: data_df[, i] 
+ARIMA(0,1,0) with drift 
+
+Coefficients:
+         drift
+      63670.47
+s.e.  17408.39
+
+sigma^2 = 1.789e+10:  log likelihood = -766.4
+AIC=1536.81   AICc=1537.03   BIC=1540.93
+
+Training set error measures:
+                   ME     RMSE      MAE        MPE     MAPE      MASE       ACF1
+Training set 84.71611 131453.1 98867.31 0.04301489 1.344797 0.8352724 -0.1516697
+
+ 
+----------------------------------------------------------------------- 
+Pertanian,_Peternakan,_Perburuan_dan_Jasa_Pertanian 
+----------------------------------------------------------------------- 
+Series: data_df[, i] 
+ARIMA(1,1,0) with drift 
+
+Coefficients:
+          ar1     drift
+      -0.3330  50324.11
+s.e.   0.1242  12342.29
+
+sigma^2 = 1.612e+10:  log likelihood = -762.93
+AIC=1531.87   AICc=1532.31   BIC=1538.05
+
+Training set error measures:
+                   ME     RMSE      MAE       MPE     MAPE      MASE       ACF1
+Training set 655.1023 123692.4 100516.7 0.1355614 2.178397 0.8758786 0.01326194
+
+ 
+----------------------------------------------------------------------- 
+a._Tanaman_Pangan_ 
+----------------------------------------------------------------------- 
+Series: ts_data 
+ARIMA(0,0,1)(0,1,1)[4] 
+
+Coefficients:
+         ma1     sma1
+      0.3684  -0.6055
+s.e.  0.1224   0.1384
+
+sigma^2 = 2.176e+09:  log likelihood = -669.29
+AIC=1344.58   AICc=1345.05   BIC=1350.6
+
+Training set error measures:
+                    ME     RMSE      MAE       MPE     MAPE      MASE        ACF1
+Training set -4751.308 44209.62 32798.38 -9.485251 20.02672 0.7805727 -0.01033024
+
+ 
+----------------------------------------------------------------------- 
+b._Tanaman_Hortikultura_Semusim 
+----------------------------------------------------------------------- 
+Series: data_df[, i] 
+ARIMA(3,1,0) with drift 
+
+Coefficients:
+          ar1      ar2      ar3     drift
+      -0.3933  -0.4381  -0.2326  814.2632
+s.e.   0.1296   0.1262   0.1285  279.0135
+
+sigma^2 = 19931914:  log likelihood = -567.91
+AIC=1145.81   AICc=1146.97   BIC=1156.12
+
+Training set error measures:
+                    ME     RMSE      MAE         MPE     MAPE      MASE       ACF1
+Training set -87.40846 4271.155 3049.534 -0.08140875 2.534477 0.9242982 0.02531137
+
+ 
+----------------------------------------------------------------------- 
+c._Perkebunan_Semusim 
+----------------------------------------------------------------------- 
+Series: data_df[, i] 
+ARIMA(3,1,0) 
+
+Coefficients:
+          ar1      ar2      ar3
+      -0.2623  -0.5403  -0.3948
+s.e.   0.1193   0.0977   0.1160
+
+sigma^2 = 14503:  log likelihood = -359.21
+AIC=726.41   AICc=727.17   BIC=734.65
+
+Training set error measures:
+                   ME    RMSE      MAE       MPE     MAPE      MASE        ACF1
+Training set 17.77297 116.273 67.60239 0.6699998 6.599063 0.8748084 -0.03630364
+
+ 
+----------------------------------------------------------------------- 
+d._Tanaman_Hortikultura_Tahunan_dan_Lainnya 
+----------------------------------------------------------------------- 
+Series: data_df[, i] 
+ARIMA(0,1,2) with drift 
+
+Coefficients:
+          ma1     ma2      drift
+      -0.4613  -0.355  1102.2991
+s.e.   0.1336   0.130   338.5084
+
+sigma^2 = 144310017:  log likelihood = -626.09
+AIC=1260.18   AICc=1260.93   BIC=1268.42
+
+Training set error measures:
+                    ME     RMSE      MAE        MPE     MAPE      MASE       ACF1
+Training set -1297.687 11598.55 8295.669 -0.7882779 3.420569 0.9279597 0.09704134
+
+ 
+----------------------------------------------------------------------- 
+e._Perkebunan_Tahunan 
+----------------------------------------------------------------------- 
+Series: data_df[, i] 
+ARIMA(2,2,1) 
+
+Coefficients:
+         ar1      ar2      ma1
+      0.1022  -0.4513  -0.8753
+s.e.  0.1243   0.1213   0.0709
+
+sigma^2 = 7.748e+09:  log likelihood = -729.49
+AIC=1466.98   AICc=1467.75   BIC=1475.15
+
+Training set error measures:
+                    ME     RMSE      MAE        MPE     MAPE      MASE        ACF1
+Training set -16839.32 84211.32 59519.57 -0.5114445 1.705647 0.6885806 -0.02384781
+
+ 
+----------------------------------------------------------------------- 
+f._Peternakan_ 
+----------------------------------------------------------------------- 
+Series: data_df[, i] 
+ARIMA(0,1,1) with drift 
+
+Coefficients:
+          ma1      drift
+      -0.3701  3212.0908
+s.e.   0.1420   602.0219
+
+sigma^2 = 53757594:  log likelihood = -597.55
+AIC=1201.11   AICc=1201.55   BIC=1207.29
+
+Training set error measures:
+                   ME    RMSE      MAE         MPE     MAPE      MASE      ACF1
+Training set 15.78444 7143.12 4679.143 -0.01928073 1.200959 0.7567031 0.0738861
+
+ 
+----------------------------------------------------------------------- 
+g._Jasa_Pertanian_dan_Perburuan__ 
+----------------------------------------------------------------------- 
+Series: data_df[, i] 
+ARIMA(1,1,3) with drift 
+
+Coefficients:
+          ar1     ma1      ma2      ma3     drift
+      -0.9126  0.6658  -0.2835  -0.2709  440.3694
+s.e.   0.0793  0.1428   0.1306   0.1348   77.9864
+
+sigma^2 = 1098830:  log likelihood = -483.43
+AIC=978.86   AICc=980.51   BIC=991.22
+
+Training set error measures:
+                   ME     RMSE      MAE        MPE     MAPE     MASE        ACF1
+Training set -7.30388 993.5211 709.6438 0.01521798 1.487332 0.848614 -0.04831967
+
+ 
+----------------------------------------------------------------------- 
+Kehutanan_dan_Penebangan_Kayu 
+----------------------------------------------------------------------- 
+Series: data_df[, i] 
+ARIMA(0,1,0) 
+
+sigma^2 = 985097960:  log likelihood = -682.84
+AIC=1367.67   AICc=1367.75   BIC=1369.73
+
+Training set error measures:
+                    ME     RMSE      MAE        MPE     MAPE      MASE        ACF1
+Training set -2384.012 31119.15 22477.65 -0.2297005 1.940367 0.9840228 -0.07011123
+
+ 
+----------------------------------------------------------------------- 
+Perikanan_ 
+----------------------------------------------------------------------- 
+Series: data_df[, i] 
+ARIMA(3,1,0) with drift 
+
+Coefficients:
+          ar1      ar2      ar3      drift
+      -0.1387  -0.2940  -0.3822  15594.670
+s.e.   0.1206   0.1145   0.1189   2164.029
+
+sigma^2 = 926393540:  log likelihood = -679.3
+AIC=1368.61   AICc=1369.76   BIC=1378.91
+
+Training set error measures:
+                   ME     RMSE      MAE        MPE     MAPE     MASE        ACF1
+Training set 225.0879 29118.48 22439.18 0.01258701 1.443289 0.829517 -0.01593115
+
+ 
+----------------------------------------------------------------------- 
+Pertambangan_dan_Penggalian_ 
+----------------------------------------------------------------------- 
+Series: data_df[, i] 
+ARIMA(0,1,0) with drift 
+
+Coefficients:
+         drift
+      332063.7
+s.e.  193726.4
+
+sigma^2 = 2.216e+12:  log likelihood = -906.17
+AIC=1816.33   AICc=1816.55   BIC=1820.46
+
+Training set error measures:
+                   ME    RMSE     MAE         MPE     MAPE      MASE      ACF1
+Training set 790.3558 1463141 1130204 -0.03102323 2.004328 0.9739703 0.1145364
+
+ 
+----------------------------------------------------------------------- 
+Pertambangan_Minyak,_Gas_dan_Panas_Bumi 
+----------------------------------------------------------------------- 
+Series: data_df[, i] 
+ARIMA(0,2,1) 
+
+Coefficients:
+          ma1
+      -0.9140
+s.e.   0.0534
+
+sigma^2 = 1.2e+11:  log likelihood = -808.33
+AIC=1620.66   AICc=1620.88   BIC=1624.74
+
+Training set error measures:
+                   ME     RMSE      MAE       MPE     MAPE      MASE        ACF1
+Training set 54473.03 337473.8 256777.4 0.4905883 2.230777 0.9503237 -0.05736009
+
+ 
+----------------------------------------------------------------------- 
+Pertambangan_Batubara_dan_Lignit 
+----------------------------------------------------------------------- 
+Series: data_df[, i] 
+ARIMA(0,1,1) with drift 
+
+Coefficients:
+         ma1     drift
+      0.2530  439212.8
+s.e.  0.1286  215549.6
+
+sigma^2 = 1.79e+12:  log likelihood = -899.5
+AIC=1804.99   AICc=1805.44   BIC=1811.18
+
+Training set error measures:
+                    ME    RMSE      MAE        MPE     MAPE      MASE         ACF1
+Training set -142.9784 1303450 973714.7 0.01888194 2.386354 0.8797131 -0.008160903
+
+ 
+----------------------------------------------------------------------- 
+Pertambangan_Bijih_Logam 
+----------------------------------------------------------------------- 
+Series: data_df[, i] 
+ARIMA(0,1,2) with drift 
+
+Coefficients:
+         ma1      ma2       drift
+      0.1957  -0.5271  -1820.3779
+s.e.  0.1669   0.1812    480.5462
+
+sigma^2 = 29430084:  log likelihood = -579.91
+AIC=1167.81   AICc=1168.57   BIC=1176.05
+
+Training set error measures:
+                   ME     RMSE      MAE       MPE     MAPE      MASE     ACF1
+Training set 15.49601 5237.826 3364.002 -0.201451 4.689439 0.9103618 0.164845
+
+ 
+----------------------------------------------------------------------- 
+Pertambangan_dan_Penggalian_Lainnya 
+----------------------------------------------------------------------- 
+Series: data_df[, i] 
+ARIMA(2,1,2) with drift 
+
+Coefficients:
+         ar1      ar2     ma1     ma2     drift
+      0.0068  -0.9530  0.1025  0.7706  51293.38
+s.e.  0.0793   0.0544  0.1583  0.1162  10495.04
+
+sigma^2 = 7.513e+09:  log likelihood = -739.93
+AIC=1491.86   AICc=1493.5   BIC=1504.22
+
+Training set error measures:
+                   ME     RMSE      MAE        MPE     MAPE      MASE        ACF1
+Training set 204.0663 82152.96 56184.06 -0.1303819 1.453868 0.6966161 0.001794475
+
+ 
+----------------------------------------------------------------------- 
+Industri_Pengolahan 
+----------------------------------------------------------------------- 
+Series: data_df[, i] 
+ARIMA(0,1,1) 
+
+Coefficients:
+          ma1
+      -0.3108
+s.e.   0.1318
+
+sigma^2 = 4.567e+11:  log likelihood = -860.42
+AIC=1724.83   AICc=1725.05   BIC=1728.95
+
+Training set error measures:
+                   ME     RMSE      MAE      MPE     MAPE      MASE       ACF1
+Training set 50326.94 664251.6 476600.3 0.145727 2.060141 0.9470351 0.01297513
+
+ 
+----------------------------------------------------------------------- 
+Industri_Batubara_dan_Pengilangan_Migas 
+----------------------------------------------------------------------- 
+Series: data_df[, i] 
+ARIMA(1,0,0) with non-zero mean 
+
+Coefficients:
+         ar1        mean
+      0.8130  16355355.5
+s.e.  0.0811    424555.3
+
+sigma^2 = 4.254e+11:  log likelihood = -873.14
+AIC=1752.28   AICc=1752.72   BIC=1758.51
+
+Training set error measures:
+                   ME     RMSE      MAE        MPE     MAPE      MASE       ACF1
+Training set -50340.1 641057.1 442047.9 -0.4619852 2.816503 0.9262245 -0.1272126
+
+ 
+----------------------------------------------------------------------- 
+a._Industri_Batu_Bara 
+----------------------------------------------------------------------- 
+Series: data_df[, i] 
+ARIMA(0,0,0) with non-zero mean 
+
+Coefficients:
+intercept  
+        0  
+
+sigma^2 = 0:  log likelihood = Inf
+AIC=-Inf   AICc=-Inf   BIC=-Inf
+
+Training set error measures:
+             ME RMSE MAE MPE MAPE MASE ACF1
+Training set  0    0   0 NaN  NaN  NaN  NaN
+
+ 
+----------------------------------------------------------------------- 
+b._Industri_Pengilangan_Migas 
+----------------------------------------------------------------------- 
+Series: data_df[, i] 
+ARIMA(1,0,0) with non-zero mean 
+
+Coefficients:
+         ar1        mean
+      0.8130  16355355.5
+s.e.  0.0811    424555.3
+
+sigma^2 = 4.254e+11:  log likelihood = -873.14
+AIC=1752.28   AICc=1752.72   BIC=1758.51
+
+Training set error measures:
+                   ME     RMSE      MAE        MPE     MAPE      MASE       ACF1
+Training set -50340.1 641057.1 442047.9 -0.4619852 2.816503 0.9262245 -0.1272126
+
+ 
+----------------------------------------------------------------------- 
+Industri_Makanan_dan_Minuman_ 
+----------------------------------------------------------------------- 
+Series: data_df[, i] 
+ARIMA(2,1,0) with drift 
+
+Coefficients:
+          ar1      ar2      drift
+      -0.2370  -0.3659  25542.744
+s.e.   0.1219   0.1201   8258.854
+
+sigma^2 = 1.049e+10:  log likelihood = -750.07
+AIC=1508.13   AICc=1508.89   BIC=1516.38
+
+Training set error measures:
+                   ME     RMSE      MAE        MPE     MAPE      MASE        ACF1
+Training set 331.0307 98909.74 65270.23 0.04090626 2.660404 0.8634324 -0.06627188
+
+ 
+----------------------------------------------------------------------- 
+Pengolahan_Tembakau 
+----------------------------------------------------------------------- 
+Series: data_df[, i] 
+ARIMA(0,0,0) with non-zero mean 
+
+Coefficients:
+intercept  
+        0  
+
+sigma^2 = 0:  log likelihood = Inf
+AIC=-Inf   AICc=-Inf   BIC=-Inf
+
+Training set error measures:
+             ME RMSE MAE MPE MAPE MASE ACF1
+Training set  0    0   0 NaN  NaN  NaN  NaN
+
+ 
+----------------------------------------------------------------------- 
+Industri_Tekstil_dan_Pakaian_Jadi 
+----------------------------------------------------------------------- 
+Series: data_df[, i] 
+ARIMA(0,1,0) with drift 
+
+Coefficients:
+         drift
+      182.2477
+s.e.   49.2162
+
+sigma^2 = 142956:  log likelihood = -426.03
+AIC=856.06   AICc=856.28   BIC=860.19
+
+Training set error measures:
+                    ME     RMSE      MAE         MPE     MAPE      MASE      ACF1
+Training set 0.1976815 371.6322 272.0536 -0.07471834 1.644442 0.8243315 -0.135436
+
+ 
+----------------------------------------------------------------------- 
+Industri_Kulit,_Barang_dari_Kulit_dan_Alas_Kaki_ 
+----------------------------------------------------------------------- 
+Series: data_df[, i] 
+ARIMA(1,1,0) with drift 
+
+Coefficients:
+          ar1    drift
+      -0.2639  29.0329
+s.e.   0.1258  12.7837
+
+sigma^2 = 15568:  log likelihood = -361.25
+AIC=728.5   AICc=728.95   BIC=734.69
+
+Training set error measures:
+                     ME     RMSE      MAE         MPE   MAPE      MASE       ACF1
+Training set -0.2728384 121.5574 96.87945 -0.01241928 2.4672 0.9324995 0.01268568
+
+ 
+----------------------------------------------------------------------- 
+Industri_Kayu,_Barang_dari_Kayu_dan_Gabus_dan_Barang_Anyaman_dari_Bambu,_Rotan_dan_Sejenisnya_ 
+----------------------------------------------------------------------- 
+Series: data_df[, i] 
+ARIMA(1,1,0) with drift 
+
+Coefficients:
+          ar1      drift
+      -0.2167  -6743.172
+s.e.   0.1274   2974.345
+
+sigma^2 = 7.82e+08:  log likelihood = -675.15
+AIC=1356.29   AICc=1356.74   BIC=1362.47
+
+Training set error measures:
+                    ME     RMSE      MAE        MPE     MAPE      MASE         ACF1
+Training set -26.90713 27243.23 18811.13 -0.0143269 2.807249 0.9426046 -0.007256154
+
+ 
+----------------------------------------------------------------------- 
+Industri_Kertas_dan_Barang_dari_Kertas,_Percetakan_dan_Reproduksi_Media_Rekaman_ 
+----------------------------------------------------------------------- 
+Series: data_df[, i] 
+ARIMA(0,1,1) with drift 
+
+Coefficients:
+          ma1     drift
+      -0.3485  7085.238
+s.e.   0.1531  2030.506
+
+sigma^2 = 571068213:  log likelihood = -666.07
+AIC=1338.15   AICc=1338.59   BIC=1344.33
+
+Training set error measures:
+                    ME     RMSE      MAE       MPE     MAPE    MASE       ACF1
+Training set -23.95974 23281.56 16258.67 -0.242688 2.476523 0.84145 0.04428682
+
+ 
+----------------------------------------------------------------------- 
+Industri_Kimia,_Farmasi_dan_Obat_Tradisional 
+----------------------------------------------------------------------- 
+Series: data_df[, i] 
+ARIMA(0,1,1) with drift 
+
+Coefficients:
+          ma1     drift
+      -0.4005  40587.93
+s.e.   0.1649  12784.76
+
+sigma^2 = 2.668e+10:  log likelihood = -777.57
+AIC=1561.15   AICc=1561.59   BIC=1567.33
+
+Training set error measures:
+                    ME     RMSE      MAE        MPE     MAPE     MASE       ACF1
+Training set -380.5036 159122.7 124473.9 -0.1858496 3.910521 1.040014 0.05434442
+
+ 
+----------------------------------------------------------------------- 
+Industri_Karet,_Barang_dari_Karet_dan_Plastik 
+----------------------------------------------------------------------- 
+Series: data_df[, i] 
+ARIMA(0,1,0) 
+
+sigma^2 = 1661885:  log likelihood = -497.68
+AIC=997.36   AICc=997.43   BIC=999.42
+
+Training set error measures:
+                   ME    RMSE      MAE      MPE     MAPE      MASE       ACF1
+Training set 84.96973 1278.17 968.6474 0.157335 2.624716 0.9836799 0.06561397
+
+ 
+----------------------------------------------------------------------- 
+Industri_Barang_Galian_bukan_Logam 
+----------------------------------------------------------------------- 
+Series: data_df[, i] 
+ARIMA(0,1,0) with drift 
+
+Coefficients:
+         drift
+      3806.853
+s.e.  2217.665
+
+sigma^2 = 290248692:  log likelihood = -646.9
+AIC=1297.79   AICc=1298.01   BIC=1301.91
+
+Training set error measures:
+                   ME     RMSE      MAE       MPE     MAPE     MASE        ACF1
+Training set 1.502027 16745.44 5982.206 -1.222323 3.686906 1.038264 -0.06253853
+
+ 
+----------------------------------------------------------------------- 
+Industri_Logam_Dasar_ 
+----------------------------------------------------------------------- 
+Series: data_df[, i] 
+ARIMA(1,2,1) 
+
+Coefficients:
+          ar1      ma1
+      -0.4321  -0.6058
+s.e.   0.1449   0.1363
+
+sigma^2 = 3.21e+08:  log likelihood = -638.66
+AIC=1283.32   AICc=1283.77   BIC=1289.44
+
+Training set error measures:
+                   ME     RMSE      MAE      MPE     MAPE      MASE        ACF1
+Training set 2195.715 17299.56 2307.761 32.50646 34.16021 0.6881185 -0.03682969
+
+ 
+----------------------------------------------------------------------- 
+Industri_Barang_dari_Logam,_Komputer,_Barang_Elektronik,_Optik_dan_Peralatan_Listrik 
+----------------------------------------------------------------------- 
+Series: data_df[, i] 
+ARIMA(0,1,2) with drift 
+
+Coefficients:
+          ma1      ma2      drift
+      -0.2744  -0.2340  1615.5418
+s.e.   0.1334   0.1447   281.4097
+
+sigma^2 = 18988358:  log likelihood = -566.9
+AIC=1141.81   AICc=1142.56   BIC=1150.05
+
+Training set error measures:
+                   ME     RMSE      MAE          MPE     MAPE      MASE       ACF1
+Training set 25.85152 4207.257 3159.539 -0.002523167 2.032786 0.8197459 0.02356736
+
+ 
+----------------------------------------------------------------------- 
+Industri_Mesin_dan_Perlengkapan_YTDL 
+----------------------------------------------------------------------- 
+Series: data_df[, i] 
+ARIMA(0,1,2) with drift 
+
+Coefficients:
+          ma1      ma2     drift
+      -0.3247  -0.1785  284.8544
+s.e.   0.1228   0.1108   42.5349
+
+sigma^2 = 425661:  log likelihood = -456.76
+AIC=921.51   AICc=922.27   BIC=929.75
+
+Training set error measures:
+                     ME     RMSE      MAE         MPE     MAPE      MASE       ACF1
+Training set 0.03975565 629.9229 377.4623 -0.08032155 1.244833 0.7781841 0.01205041
+
+ 
+----------------------------------------------------------------------- 
+Industri_Alat_Angkutan 
+----------------------------------------------------------------------- 
+Series: data_df[, i] 
+ARIMA(0,1,0) with drift 
+
+Coefficients:
+         drift
+      1860.479
+s.e.   619.716
+
+sigma^2 = 22665900:  log likelihood = -572.95
+AIC=1149.9   AICc=1150.12   BIC=1154.02
+
+Training set error measures:
+                   ME     RMSE      MAE         MPE     MAPE      MASE        ACF1
+Training set 2.410642 4679.483 3294.509 -0.01407962 1.654419 0.8835212 -0.05216907
+
+ 
+----------------------------------------------------------------------- 
+Industri_Furnitur 
+----------------------------------------------------------------------- 
+Series: data_df[, i] 
+ARIMA(0,1,0) 
+
+sigma^2 = 8968212:  log likelihood = -546.56
+AIC=1095.13   AICc=1095.2   BIC=1097.19
+
+Training set error measures:
+                   ME    RMSE      MAE       MPE     MAPE      MASE       ACF1
+Training set 532.0773 2969.21 2333.787 0.5450434 2.578337 0.9835803 0.03272529
+
+ 
+----------------------------------------------------------------------- 
+Industri_pengolahan_lainnya,_jasa_reparasi_dan_pemasangan_mesin_dan_peralatan 
+----------------------------------------------------------------------- 
+Series: data_df[, i] 
+ARIMA(0,1,0) with drift 
+
+Coefficients:
+         drift
+      518.5169
+s.e.  179.0422
+
+sigma^2 = 1891884:  log likelihood = -500.93
+AIC=1005.87   AICc=1006.08   BIC=1009.99
+
+Training set error measures:
+                    ME     RMSE      MAE        MPE     MAPE     MASE       ACF1
+Training set 0.5127116 1351.944 930.5399 -0.1140636 2.111391 0.865853 -0.1277386
+
+ 
+----------------------------------------------------------------------- 
+Pengadaan_Listrik_dan_Gas 
+----------------------------------------------------------------------- 
+Series: data_df[, i] 
+ARIMA(2,1,2) with drift 
+
+Coefficients:
+         ar1      ar2      ma1     ma2      drift
+      0.6741  -0.8451  -0.8897  0.8253  1593.9798
+s.e.  0.2776   0.4783   0.1209  0.6459   370.6494
+
+sigma^2 = 13400554:  log likelihood = -556.06
+AIC=1124.12   AICc=1125.76   BIC=1136.48
+
+Training set error measures:
+                   ME     RMSE      MAE        MPE    MAPE      MASE        ACF1
+Training set 16.73326 3469.551 2098.127 -0.7615645 3.67492 0.8576405 -0.06132231
+
+ 
+----------------------------------------------------------------------- 
+Ketenagalistrikan_ 
+----------------------------------------------------------------------- 
+Series: data_df[, i] 
+ARIMA(0,1,1) with drift 
+
+Coefficients:
+          ma1      drift
+      -0.2656  1542.6677
+s.e.   0.1603   366.3787
+
+sigma^2 = 14762114:  log likelihood = -560.04
+AIC=1126.07   AICc=1126.52   BIC=1132.26
+
+Training set error measures:
+                    ME     RMSE      MAE        MPE     MAPE      MASE       ACF1
+Training set -2.364283 3743.194 2113.205 -0.8193159 3.656623 0.8723826 0.04907851
+
+ 
+----------------------------------------------------------------------- 
+Pengadaan_Gas_dan_Produksi_Es 
+----------------------------------------------------------------------- 
+Series: data_df[, i] 
+ARIMA(0,2,2) 
+
+Coefficients:
+          ma1      ma2
+      -0.1506  -0.6814
+s.e.   0.0979   0.0950
+
+sigma^2 = 4366:  log likelihood = -319.49
+AIC=644.98   AICc=645.43   BIC=651.11
+
+Training set error measures:
+                   ME     RMSE      MAE       MPE     MAPE      MASE       ACF1
+Training set 8.147187 63.79861 28.47103 0.5399512 2.010649 0.6077933 0.01779925
+
+ 
+----------------------------------------------------------------------- 
+Pengadaan_Air,_Pengelolaan_Sampah,_Limbah_dan_Daur_Ulang 
+----------------------------------------------------------------------- 
+Series: data_df[, i] 
+ARIMA(0,2,1) 
+
+Coefficients:
+          ma1
+      -0.9206
+s.e.   0.0492
+
+sigma^2 = 752665:  log likelihood = -466.96
+AIC=937.92   AICc=938.14   BIC=942
+
+Training set error measures:
+                   ME     RMSE      MAE       MPE      MAPE      MASE        ACF1
+Training set 138.6042 845.2183 566.2184 0.2188436 0.9924466 0.6371846 -0.03188658
+
+ 
+----------------------------------------------------------------------- 
+Konstruksi 
+----------------------------------------------------------------------- 
+Series: data_df[, i] 
+ARIMA(2,1,2) with drift 
+
+Coefficients:
+          ar1      ar2     ma1     ma2      drift
+      -0.0841  -0.8893  0.2336  0.5992  121875.95
+s.e.   0.1300   0.0886  0.2867  0.1363   32014.14
+
+sigma^2 = 7.471e+10:  log likelihood = -806.35
+AIC=1624.7   AICc=1626.35   BIC=1637.07
+
+Training set error measures:
+                  ME     RMSE      MAE        MPE     MAPE      MASE       ACF1
+Training set 128.673 259062.6 195086.5 -0.2188769 2.214378 0.7404843 0.04971045
+
+ 
+----------------------------------------------------------------------- 
+Perdagangan_Besar_dan_Eceran;_Reparasi_Mobil_dan_Sepeda_Motor 
+----------------------------------------------------------------------- 
+Series: data_df[, i] 
+ARIMA(0,1,0) with drift 
+
+Coefficients:
+         drift
+      84445.44
+s.e.  13482.39
+
+sigma^2 = 1.073e+10:  log likelihood = -751.58
+AIC=1507.16   AICc=1507.38   BIC=1511.28
+
+Training set error measures:
+                   ME     RMSE     MAE         MPE     MAPE      MASE      ACF1
+Training set 66.00053 101807.3 74886.8 -0.06909463 1.216616 0.6820635 0.1336797
+
+ 
+----------------------------------------------------------------------- 
+Perdagangan_Mobil,_Sepeda_Motor_dan_Reparasinya 
+----------------------------------------------------------------------- 
+Series: data_df[, i] 
+ARIMA(0,1,0) with drift 
+
+Coefficients:
+         drift
+      5373.872
+s.e.  1627.739
+
+sigma^2 = 156371082:  log likelihood = -628.96
+AIC=1261.92   AICc=1262.13   BIC=1266.04
+
+Training set error measures:
+                 ME     RMSE      MAE         MPE     MAPE      MASE       ACF1
+Training set 7.2864 12291.07 9145.553 0.009124879 1.512658 0.8259031 0.03635993
+
+ 
+----------------------------------------------------------------------- 
+Perdagangan_Besar_dan_Eceran,_Bukan_Mobil_dan_Sepeda_Motor 
+----------------------------------------------------------------------- 
+Series: data_df[, i] 
+ARIMA(0,1,0) with drift 
+
+Coefficients:
+         drift
+      79071.57
+s.e.  12908.43
+
+sigma^2 = 9.834e+09:  log likelihood = -749.06
+AIC=1502.12   AICc=1502.33   BIC=1506.24
+
+Training set error measures:
+                   ME     RMSE      MAE         MPE     MAPE      MASE      ACF1
+Training set 58.71413 97471.17 72021.34 -0.08457451 1.298764 0.6974358 0.1176566
+
+ 
+----------------------------------------------------------------------- 
+Transportasi_dan_Pergudangan_ 
+----------------------------------------------------------------------- 
+Series: data_df[, i] 
+ARIMA(1,1,0) with drift 
+
+Coefficients:
+          ar1     drift
+      -0.3848  42959.37
+s.e.   0.1197  12194.04
+
+sigma^2 = 1.696e+10:  log likelihood = -764.44
+AIC=1534.88   AICc=1535.32   BIC=1541.06
+
+Training set error measures:
+                   ME     RMSE      MAE        MPE     MAPE      MASE       ACF1
+Training set 59.66341 126894.1 74995.56 -0.1441144 2.249347 0.8192054 -0.0307666
+
+ 
+----------------------------------------------------------------------- 
+Angkutan_Rel_ 
+----------------------------------------------------------------------- 
+Series: data_df[, i] 
+ARIMA(0,0,0) with non-zero mean 
+
+Coefficients:
+intercept  
+        0  
+
+sigma^2 = 0:  log likelihood = Inf
+AIC=-Inf   AICc=-Inf   BIC=-Inf
+
+Training set error measures:
+             ME RMSE MAE MPE MAPE MASE ACF1
+Training set  0    0   0 NaN  NaN  NaN  NaN
+
+ 
+----------------------------------------------------------------------- 
+Angkutan_Darat 
+----------------------------------------------------------------------- 
+Series: data_df[, i] 
+ARIMA(0,1,1) with drift 
+
+Coefficients:
+          ma1     drift
+      -0.6406  6465.088
+s.e.   0.1155  1063.134
+
+sigma^2 = 491744858:  log likelihood = -661.94
+AIC=1329.87   AICc=1330.32   BIC=1336.05
+
+Training set error measures:
+                    ME     RMSE      MAE        MPE     MAPE      MASE       ACF1
+Training set -67.16561 21604.19 11030.04 -0.1232348 1.871057 0.7234437 0.00135519
+
+ 
+----------------------------------------------------------------------- 
+Angkutan_Laut_ 
+----------------------------------------------------------------------- 
+Series: data_df[, i] 
+ARIMA(0,1,0) with drift 
+
+Coefficients:
+         drift
+      7460.676
+s.e.  2098.514
+
+sigma^2 = 259902715:  log likelihood = -643.69
+AIC=1291.39   AICc=1291.6   BIC=1295.51
+
+Training set error measures:
+                   ME    RMSE     MAE         MPE     MAPE      MASE       ACF1
+Training set 6.536204 15845.9 10391.5 -0.07112408 1.716574 0.7996353 -0.1094423
+
+ 
+----------------------------------------------------------------------- 
+Angkutan_Sungai_Danau_dan_Penyeberangan 
+----------------------------------------------------------------------- 
+Series: data_df[, i] 
+ARIMA(1,1,0) with drift 
+
+Coefficients:
+          ar1     drift
+      -0.4683  3115.819
+s.e.   0.1143  1249.676
+
+sigma^2 = 2e+08:  log likelihood = -635.71
+AIC=1277.42   AICc=1277.86   BIC=1283.6
+
+Training set error measures:
+                    ME     RMSE      MAE        MPE     MAPE     MASE        ACF1
+Training set -4.141825 13778.54 6445.677 -0.1884224 2.306981 0.719395 0.003819542
+
+ 
+----------------------------------------------------------------------- 
+Angkutan_Udara 
+----------------------------------------------------------------------- 
+Series: data_df[, i] 
+ARIMA(0,1,1) 
+
+Coefficients:
+          ma1
+      -0.2850
+s.e.   0.1204
+
+sigma^2 = 5.058e+09:  log likelihood = -729.82
+AIC=1463.64   AICc=1463.86   BIC=1467.76
+
+Training set error measures:
+                   ME     RMSE      MAE      MPE     MAPE   MASE        ACF1
+Training set 13133.89 69905.95 41074.62 0.961754 7.005033 0.9227 -0.03913647
+
+ 
+----------------------------------------------------------------------- 
+Pergudangan_dan_Jasa_Penunjang_Angkutan,_Pos_dan_Kurir 
+----------------------------------------------------------------------- 
+Series: data_df[, i] 
+ARIMA(1,1,1) with drift 
+
+Coefficients:
+          ar1     ma1      drift
+      -0.8752  0.6643  16187.754
+s.e.   0.1255  0.1718   3285.268
+
+sigma^2 = 835688317:  log likelihood = -676.67
+AIC=1361.35   AICc=1362.1   BIC=1369.59
+
+Training set error measures:
+                   ME     RMSE      MAE        MPE     MAPE      MASE       ACF1
+Training set 15.52969 27911.14 18173.32 -0.1132883 1.488909 0.8233904 0.05374067
+
+ 
+----------------------------------------------------------------------- 
+Penyediaan_Akomodasi_dan_Makan_Minum 
+----------------------------------------------------------------------- 
+Series: data_df[, i] 
+ARIMA(1,1,0) with drift 
+
+Coefficients:
+          ar1      drift
+      -0.2292  14349.180
+s.e.   0.1270   3229.549
+
+sigma^2 = 940522270:  log likelihood = -680.5
+AIC=1367.01   AICc=1367.45   BIC=1373.19
+
+Training set error measures:
+                    ME     RMSE     MAE        MPE     MAPE      MASE        ACF1
+Training set -8.704017 29878.07 15209.1 -0.1544232 1.579114 0.6561644 -0.01441186
+
+ 
+----------------------------------------------------------------------- 
+Penyediaan_Akomodasi_ 
+----------------------------------------------------------------------- 
+Series: data_df[, i] 
+ARIMA(0,1,1) with drift 
+
+Coefficients:
+          ma1      drift
+      -0.4287  1777.9523
+s.e.   0.1329   641.2776
+
+sigma^2 = 73332104:  log likelihood = -606.59
+AIC=1219.17   AICc=1219.62   BIC=1225.36
+
+Training set error measures:
+                    ME     RMSE      MAE        MPE     MAPE      MASE       ACF1
+Training set -16.99173 8342.862 4143.858 -0.3466747 2.984639 0.7636328 0.02416292
+
+ 
+----------------------------------------------------------------------- 
+Penyediaan_Makan_Minum 
+----------------------------------------------------------------------- 
+Series: data_df[, i] 
+ARIMA(0,1,0) with drift 
+
+Coefficients:
+          drift
+      12516.126
+s.e.   3051.021
+
+sigma^2 = 549381916:  log likelihood = -665.4
+AIC=1334.8   AICc=1335.02   BIC=1338.92
+
+Training set error measures:
+                   ME    RMSE      MAE       MPE     MAPE      MASE       ACF1
+Training set 7.667301 23038.2 12281.85 -0.123373 1.493376 0.6380254 -0.1926464
+
+ 
+----------------------------------------------------------------------- 
+Informasi_dan_Komunikasi 
+----------------------------------------------------------------------- 
+Series: data_df[, i] 
+ARIMA(3,2,2) 
+
+Coefficients:
+          ar1      ar2      ar3     ma1      ma2
+      -0.6843  -0.3638  -0.5588  -0.177  -0.5434
+s.e.   0.1602   0.1579   0.1280   0.180   0.1663
+
+sigma^2 = 426282832:  log likelihood = -646.1
+AIC=1304.19   AICc=1305.87   BIC=1316.45
+
+Training set error measures:
+                   ME     RMSE      MAE       MPE      MAPE      MASE        ACF1
+Training set 3502.971 19383.16 13810.72 0.1682251 0.7672206 0.4166576 -0.07753762
+
+ 
+----------------------------------------------------------------------- 
+Jasa_Keuangan_dan_Asuransi 
+----------------------------------------------------------------------- 
+Series: data_df[, i] 
+ARIMA(0,1,1) with drift 
+
+Coefficients:
+          ma1      drift
+      -0.4151  22068.484
+s.e.   0.1027   5181.356
+
+sigma^2 = 4.596e+09:  log likelihood = -726.58
+AIC=1459.16   AICc=1459.61   BIC=1465.34
+
+Training set error measures:
+                    ME     RMSE      MAE        MPE     MAPE      MASE        ACF1
+Training set -36.92999 66048.95 47590.37 -0.1664725 2.785968 0.8762239 -0.03351769
+
+ 
+----------------------------------------------------------------------- 
+Jasa_Perantara_Keuangan_ 
+----------------------------------------------------------------------- 
+Series: data_df[, i] 
+ARIMA(0,1,3) with drift 
+
+Coefficients:
+          ma1      ma2     ma3      drift
+      -0.4852  -0.0798  0.4404  16259.721
+s.e.   0.1327   0.1636  0.1738   6991.245
+
+sigma^2 = 4.069e+09:  log likelihood = -722.38
+AIC=1454.77   AICc=1455.92   BIC=1465.07
+
+Training set error measures:
+                   ME     RMSE      MAE        MPE     MAPE      MASE        ACF1
+Training set 66.15846 61029.01 44105.63 -0.2422746 3.918978 0.8498451 -0.01419115
+
+ 
+----------------------------------------------------------------------- 
+Asuransi_dan_Dana_Pensiun 
+----------------------------------------------------------------------- 
+Series: data_df[, i] 
+ARIMA(3,1,0) with drift 
+
+Coefficients:
+          ar1      ar2      ar3      drift
+      -0.2302  -0.5155  -0.3360  2622.9972
+s.e.   0.1228   0.1036   0.1202   280.6608
+
+sigma^2 = 20464506:  log likelihood = -568.88
+AIC=1147.76   AICc=1148.91   BIC=1158.06
+
+Training set error measures:
+                    ME     RMSE      MAE       MPE    MAPE     MASE        ACF1
+Training set -19.28151 4327.843 2823.544 0.0106985 1.18239 0.664487 -0.01542723
+
+ 
+----------------------------------------------------------------------- 
+Jasa_Keuangan_Lainnya 
+----------------------------------------------------------------------- 
+Series: data_df[, i] 
+ARIMA(0,1,1) with drift 
+
+Coefficients:
+         ma1      drift
+      0.2620  3266.8241
+s.e.  0.1472   757.1457
+
+sigma^2 = 21776789:  log likelihood = -571.31
+AIC=1148.62   AICc=1149.06   BIC=1154.8
+
+Training set error measures:
+                   ME     RMSE      MAE         MPE      MAPE    MASE        ACF1
+Training set 2.640669 4546.372 2800.943 0.004148986 0.8168542 0.63338 -0.03023427
+
+ 
+----------------------------------------------------------------------- 
+Jasa_Penunjang_Keuangan 
+----------------------------------------------------------------------- 
+Series: data_df[, i] 
+ARIMA(2,2,2) 
+
+Coefficients:
+         ar1      ar2      ma1     ma2
+      1.0409  -0.6196  -1.5855  0.8177
+s.e.  0.1634   0.1169   0.1803  0.1538
+
+sigma^2 = 0.417:  log likelihood = -54.84
+AIC=119.68   AICc=120.85   BIC=129.89
+
+Training set error measures:
+                     ME      RMSE       MAE       MPE     MAPE     MASE        ACF1
+Training set 0.06291844 0.6120208 0.3991869 0.1953072 1.345346 0.684965 0.007606693
+
+ 
+----------------------------------------------------------------------- 
+Real_Estate 
+----------------------------------------------------------------------- 
+Series: data_df[, i] 
+ARIMA(2,1,0) with drift 
+
+Coefficients:
+         ar1     ar2     drift
+      0.2226  0.2313  9423.477
+s.e.  0.1266  0.1288  2438.485
+
+sigma^2 = 112507591:  log likelihood = -618.47
+AIC=1244.94   AICc=1245.7   BIC=1253.19
+
+Training set error measures:
+                   ME     RMSE      MAE        MPE      MAPE      MASE       ACF1
+Training set 18.18925 10241.09 7553.187 0.01322726 0.7647405 0.6250266 0.03189034
+
+ 
+----------------------------------------------------------------------- 
+Jasa_Perusahaan 
+----------------------------------------------------------------------- 
+Series: data_df[, i] 
+ARIMA(0,1,0) with drift 
+
+Coefficients:
+          drift
+      2283.5796
+s.e.   686.4098
+
+sigma^2 = 27806912:  log likelihood = -578.88
+AIC=1161.75   AICc=1161.97   BIC=1165.87
+
+Training set error measures:
+                   ME     RMSE      MAE        MPE     MAPE      MASE      ACF1
+Training set 2.424206 5183.079 3641.871 0.01519633 1.691996 0.7642204 0.1165861
+
+ 
+----------------------------------------------------------------------- 
+Administrasi_Pemerintahan,_Pertahanan_dan_Jaminan_Sosial_Wajib 
+----------------------------------------------------------------------- 
+Series: data_df[, i] 
+ARIMA(1,1,0) with drift 
+
+Coefficients:
+          ar1     drift
+      -0.6222  23489.05
+s.e.   0.1076  11212.01
+
+sigma^2 = 1.96e+10:  log likelihood = -768.79
+AIC=1543.58   AICc=1544.03   BIC=1549.76
+
+Training set error measures:
+                   ME     RMSE      MAE        MPE     MAPE      MASE        ACF1
+Training set 357.5126 136396.2 106916.1 -0.3698342 5.393854 0.7995843 -0.06887837
+
+ 
+----------------------------------------------------------------------- 
+Jasa_Pendidikan 
+----------------------------------------------------------------------- 
+Series: data_df[, i] 
+ARIMA(0,1,0) with drift 
+
+Coefficients:
+          drift
+      27145.528
+s.e.   6587.655
+
+sigma^2 = 2.561e+09:  log likelihood = -710.04
+AIC=1424.08   AICc=1424.3   BIC=1428.21
+
+Training set error measures:
+                   ME     RMSE      MAE       MPE     MAPE      MASE       ACF1
+Training set 8.796267 49742.81 34998.34 0.1788159 2.810451 0.8257049 -0.1090831
+
+ 
+----------------------------------------------------------------------- 
+Jasa_Kesehatan_dan_Kegiatan_Sosial 
+----------------------------------------------------------------------- 
+Series: data_df[, i] 
+ARIMA(1,1,2) with drift 
+
+Coefficients:
+          ar1     ma1     ma2      drift
+      -0.7671  1.1925  0.6059  14631.962
+s.e.   0.1251  0.1322  0.1154   2758.113
+
+sigma^2 = 191685354:  log likelihood = -633.78
+AIC=1277.56   AICc=1278.72   BIC=1287.86
+
+Training set error measures:
+                   ME     RMSE      MAE       MPE     MAPE      MASE        ACF1
+Training set 12.40984 13245.41 9350.399 -0.142964 1.470445 0.6008477 -0.03039788
+
+ 
+----------------------------------------------------------------------- 
+Jasa_lainnya 
+----------------------------------------------------------------------- 
+Series: data_df[, i] 
+ARIMA(0,1,0) with drift 
+
+Coefficients:
+         drift
+      8998.490
+s.e.  2102.291
+
+sigma^2 = 260836981:  log likelihood = -643.8
+AIC=1291.59   AICc=1291.81   BIC=1295.71
+
+Training set error measures:
+                   ME     RMSE      MAE        MPE     MAPE      MASE        ACF1
+Training set 5.976955 15874.35 9539.602 -0.1355452 1.534866 0.7485095 -0.08673738
+
+ 
+----------------------------------------------------------------------- 
+PDRB 
+----------------------------------------------------------------------- 
+Series: data_df[, i] 
+ARIMA(0,1,0) with drift 
+
+Coefficients:
+         drift
+      841052.8
+s.e.  274965.7
+
+sigma^2 = 4.46e+12:  log likelihood = -926.45
+AIC=1856.91   AICc=1857.13   BIC=1861.03
+
+Training set error measures:
+                   ME    RMSE     MAE         MPE     MAPE      MASE        ACF1
+Training set 1585.485 2075861 1457782 -0.03076135 1.256604 0.8710732 -0.04380975
+
+ 
+----------------------------------------------------------------------- 
+PDRB_tanpamigas 
+----------------------------------------------------------------------- 
+Series: data_df[, i] 
+ARIMA(0,1,0) with drift 
+
+Coefficients:
+          drift
+      1037191.2
+s.e.   235345.7
+
+sigma^2 = 3.269e+12:  log likelihood = -917.44
+AIC=1838.88   AICc=1839.1   BIC=1843
+
+Training set error measures:
+                   ME    RMSE     MAE           MPE     MAPE      MASE      ACF1
+Training set 961.6337 1777024 1255112 -0.0007755697 1.428027 0.7554277 0.1623637
+
+ 
+
+ ================================================================================================================= 
+ Plot has been saved in  C:\Users\BPS KALTIM\Downloads\Tes1\ARIMA 
+ ================================================================================================================= 
+ 
+ ============================ FORECASTING AND FITTED VALUE HAS BEEN SAVED ============================
