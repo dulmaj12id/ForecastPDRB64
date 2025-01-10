@@ -1,22 +1,15 @@
 # Install Package (JIKA BELUM)
-
-install.packages(c("ggplot2", "forecast", "openxlsx", "tibble", "BiocManager", "devtools"))
-
-library(BiocManager)
-BiocManager::install("mixOmics")
-
-library("devtools")
-devtools::install_github("dulmaj12id/ForecastPDRB64")
+# install.packages(c("ggplot2", "forecast", "openxlsx", "tibble", "BiocManager", "devtools"))
+# library(BiocManager)
+# BiocManager::install("mixOmics")
+# library("devtools")
+# devtools::install_github("dulmaj12id/ForecastPDRB64")
 
 
 # Library Loading
 
 library(ForecastPDRB64)
-library(openxlsx)
-library(forecast)
-library(mixOmics)
-library(tibble)
-library(ggplot2)
+ForecastPDRB64::load.package()
 
 
 # Database Loading
