@@ -5,7 +5,7 @@ load.package <- function() {
   library(tibble)
   library(ggplot2)
 }
-pdrb.forecast.arima <- function(data_df, mypath.img) {
+pdrb.forecast.arima <- function(data_df, mypath) {
   # INISIASI
   forecasted_df <- data.frame()
   fitted_df <- data.frame()
