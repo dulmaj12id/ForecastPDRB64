@@ -12,7 +12,7 @@ library(ForecastPDRB64)
 ForecastPDRB64::load.package()
 
 
-# Database Loading
+# Data Loading
 
 pdrb_df <- read.xlsx(file.choose())
 data.pdrb <- pdrb_df[, 3:ncol(pdrb_df)]
