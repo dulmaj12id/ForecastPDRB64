@@ -33,6 +33,10 @@ sink(mypath)
 arima <- pdrb.forecast.arima(data.pdrb)
 sink()
 
+cat("=============================================\n")
+cat("Model ARIMA berhasil disimpan di", mypath, "\n")
+cat("=============================================\n")
+
 
 # Forecasting dengan Exponential Smoothing
 # Simpan gambar
@@ -41,6 +45,10 @@ mypath <- file.path(choose.dir(caption = "Pilih Lokasi Simpan Model Exp Smoothin
 sink(mypath)
 es <- pdrb.forecast.es(data.pdrb)
 sink()
+
+cat("=============================================\n")
+cat("Model Exp Smoothing berhasil disimpan di", mypath, "\n")
+cat("=============================================\n")
 
 
 # Export Hasil Forecasting ke Excel
