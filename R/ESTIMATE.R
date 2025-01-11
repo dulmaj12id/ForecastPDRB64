@@ -11,7 +11,7 @@ pdrb.forecast.arima <- function(data_df) {
   fitted_df <- data.frame()
   fitted_val <- data.frame()
   plot_list <- list()
-  folder_image <- choose.dir(default = "", caption = "Select folder to save the ARIMA Plot file")
+  folder_image <- choose.dir(default = "", caption = "Pilih folder untuk menyimpan ARIMA Plot file")
 
   # Melakukan forecasting untuk setiap variabel
   for (i in 1:ncol(data_df)) {
@@ -86,7 +86,7 @@ pdrb.forecast.es <- function(data_df) {
   fitted_df <- data.frame()
   fitted_val <- data.frame()
   plot_list <- list()
-  folder_image <- choose.dir(default = "", caption = "Select folder to save the Exp Smoothing Plot file")
+  folder_image <- choose.dir(default = "", caption = "Pilih folder untuk menyimpan Exponential Smoothing Plot file")
 
   # Melakukan forecasting untuk setiap variabel
   for (i in 1:ncol(data_df)) {
@@ -160,7 +160,7 @@ export.hasil <- function(arima.forecastedval, arima.fittedval, es.forecastedval,
                       "Forecast ES" = es.forecastedval, "Fitted ES" = es.fittedval)
 
   # Open a window to choose the folder to save the file
-  folder_path <- choose.dir(default = "", caption = "Select folder to save the Excel file")
+  folder_path <- choose.dir(default = "", caption = "Pilih folder untuk menyimpan Excel file hasil forecasting")
 
   file_path <- file.path(folder_path, "Hasil Forecasting ARIMA dan EXPONENTIAL SMOOTHING.xlsx")
   write.xlsx(savetoexcel, file = file_path)
