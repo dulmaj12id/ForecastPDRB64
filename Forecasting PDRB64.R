@@ -1,9 +1,9 @@
 # Install Package (JIKA BELUM)
-# install.packages(c("ggplot2", "forecast", "openxlsx", "tibble", "BiocManager", "devtools"))
-# library(BiocManager)
-# BiocManager::install("mixOmics")
-# library("devtools")
-# devtools::install_github("dulmaj12id/ForecastPDRB64")
+install.packages(c("ggplot2", "forecast", "openxlsx", "tibble", "BiocManager", "devtools"))
+library(BiocManager)
+BiocManager::install("mixOmics")
+library("devtools")
+devtools::install_github("dulmaj12id/ForecastPDRB64")
 
 
 # Library Loading
@@ -33,7 +33,7 @@ cat("Model ARIMA berhasil disimpan di", mypath, "\n")
 # Forecasting dengan Exponential Smoothing
 # Simpan gambar
 
-mypath <- file.path(choose.dir(caption = "Pilih Lokasi Simpan Model Exp Smoothing"), "ModelExpSmoothing.txt")
+mypath <- file.path(choose.dir(caption = "Pilih Lokasi Simpan Model Exponential Smoothing"), "ModelExponentialSmoothing.txt")
 sink(mypath)
 es <- pdrb.forecast.es(data.pdrb)
 sink()
