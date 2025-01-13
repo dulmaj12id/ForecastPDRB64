@@ -18,7 +18,7 @@ cek.package.nya <- function() {
     library(BiocManager)
     BiocManager::install("mixOmics")
     cat("Package mixOmics telah terinstall")
-  } if (length(missing_packages) > 0) {
+  } else if (length(missing_packages) > 0) {
     cat("Package ini belum terinstall:", paste(missing_packages, collapse = ", "), ". Package akan diinstall. \n")
     install.packages(paste0(missing_packages))
     cat("Package " paste0(packages), " telah diinstall. \n")
