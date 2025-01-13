@@ -19,6 +19,7 @@ load.package <- function() {
   library(tibble)
   library(ggplot2)
 }
+
 pdrb.forecast.arima <- function(data_df) {
   # INISIASI
   forecasted_df <- data.frame()
@@ -94,6 +95,7 @@ pdrb.forecast.arima <- function(data_df) {
   # Save Output
   return(list(forecastedval = forecasted_df, fittedval = fitted_df))
 }
+
 pdrb.forecast.es <- function(data_df) {
   # INISIASI
   forecasted_df <- data.frame()
