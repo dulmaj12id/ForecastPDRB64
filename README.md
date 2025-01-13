@@ -18,3 +18,6 @@ Download Template Excel dan Folder [Template.zip](https://github.com/dulmaj12id/
 
 5. Excel Output R berisi nilai hasing Forecasting dan Fitted Value dimasukkan pada template di folder `5. Hasil Estimasi` 
 6. Masukkan nilai Forecasting pada template excel
+
+## Versi Notebook
+Gunakan project: [ForecastPDRB64-Notebook](https://github.com/dulmaj12id/ForecastPDRB64-Notebook) jika ingin menggunakan R-Package melalui R-Studio
