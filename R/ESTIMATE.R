@@ -170,6 +170,17 @@ pdrb.forecast.es <- function(data_df) {
   return(list(forecastedval = forecasted_df, fittedval = fitted_df))
 }
 
+cat.final <- function(){
+  grid <- expand.grid(3, 2)
+  df <- data.frame(x = grid[, 1],
+                 y = grid[, 2],
+                 image = "mouth")
+  ggplot(df) +
+  geom_cat(aes(x, y, cat = image), size = 15) +
+    xlim(c(0.25, 5.5)) + 
+    ylim(c(0.25, 3.5))
+}
+
 export.hasil <- function(arima.forecastedval, arima.fittedval, es.forecastedval, es.fittedval){
   savetoexcel <- list("Forecast ARIMA" = arima.forecastedval, "Fitted ARIMA" = arima.fittedval,
                       "Forecast Exp Smoothing" = es.forecastedval, "Fitted Exp Smoothing" = es.fittedval)
@@ -182,15 +193,5 @@ export.hasil <- function(arima.forecastedval, arima.fittedval, es.forecastedval,
   cat("\n =================================================================================================================",
       "\n File Excel Forcasted Value dan Fitted Value telah disimpan di ", folder_path,
       "\n =================================================================================================================")
-}
-
-cat.final <- function(){
-  grid <- expand.grid(3, 2)
-  df <- data.frame(x = grid[, 1],
-                 y = grid[, 2],
-                 image = "mouth")
-  ggplot(df) +
-  geom_cat(aes(x, y, cat = image), size = 15) +
-    xlim(c(0.25, 5.5)) + 
-    ylim(c(0.25, 3.5))
+  cat.final()
 }
