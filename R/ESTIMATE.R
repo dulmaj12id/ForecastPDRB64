@@ -182,7 +182,7 @@ pdrb.forecast.es <- function(data_df) {
 
 export.hasil <- function(arima.forecastedval, arima.fittedval, es.forecastedval, es.fittedval){
   savetoexcel <- list("Forecast ARIMA" = arima.forecastedval, "Fitted ARIMA" = arima.fittedval,
-                      "Forecast ES" = es.forecastedval, "Fitted ES" = es.fittedval)
+                      "Forecast Exp Smoothing" = es.forecastedval, "Fitted Exp Smoothing" = es.fittedval)
 
   # Open a window to choose the folder to save the file
   folder_path <- choose.dir(default = "", caption = "Pilih folder untuk menyimpan Excel file hasil forecasting")
