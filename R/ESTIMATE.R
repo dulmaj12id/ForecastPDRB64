@@ -12,7 +12,7 @@ cek.package.nya <- function() {
   missing_packages <- packages[!(packages %in% installed.packages()[,"Package"])]
   missing_packages1 <- packages1[!(packages1 %in% installed.packages()[,"Package"])]
 
-  if (length(missing_package1) > 0) {
+  if (length(missing_packages1) > 0) {
     cat("Package mixOmics belum terinstall. Package akan diinstall. \n")
     install.packages("BiocManager")
     library(BiocManager)
