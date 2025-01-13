@@ -7,19 +7,27 @@ load.package <- function() {
 }
 
 cek.package.nya <- function() {
-  packages <- c("openxlsx", "forecast", "mixOmics", "tibble", "ggplot2")
+  packages <- c("openxlsx", "forecast", "tibble", "ggplot2")
+  packages1 <- "mixOmics"
   missing_packages <- packages[!(packages %in% installed.packages()[,"Package"])]
+  missing_packages1 <- packages1[!(packages1 %in% installed.packages()[,"Package"])]
 
-  if (length(missing_packages) > 0) {
+  if (length(missing_package1) > 0) {
+    cat("Package mixOmics belum terinstall. Package akan diinstall. \n")
+    install.packages("BiocManager")
+    library(BiocManager)
+    BiocManager::install("mixOmics")
+    cat("Package mixOmics telah terinstall")
+  } if (length(missing_packages) > 0) {
     cat("Package ini belum terinstall:", paste(missing_packages, collapse = ", "), ". Package akan diinstall. \n")
     install.packages(paste0(missing_packages))
-    load.package()
-    cat("Seluruh package telah diinstall dan di-Load.\n")
+    cat("Package " paste0(packages), " telah diinstall\n")
+  }
   } else {
     cat("Seluruh package telah diinstall.\n")
-    load.package()
-    cat("Seluruh package telah di-Load.\n")
   }
+  load.package()
+  cat("Seluruh package telah di-Load.\n")
 }
 
 pdrb.forecast.arima <- function(data_df) {
