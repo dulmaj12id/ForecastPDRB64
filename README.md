@@ -4,8 +4,10 @@
 Download Template Excel dan Folder [Template.zip](https://github.com/dulmaj12id/ForecastPDRB64/blob/Utama/Template%20Forecast%20PDRB64.zip)
 
 ## Cara Penggunaan
-1. Siapkan excel data sesuai template pada folder `1. Data Input`
-2. 
+1. Extract File `Template Forecast PDRB64.zip` pada di masing-masing PC 
+
+2. Siapkan excel data sesuai template pada folder `1. Data Input`
+
 3. Gunakan file `Forecasting PDRB64.R` untuk menjalankan proses estimasi. File `Forecasting PDRB64.R` dapat diunduh bersamaan dengan file template
 
    ![image](https://github.com/user-attachments/assets/2e6bec74-07d9-4eef-be20-8766c3eeb2be)
