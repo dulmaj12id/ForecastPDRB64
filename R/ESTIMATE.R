@@ -14,9 +14,11 @@ cek.package.nya <- function() {
     cat("Package ini belum terinstall:", paste(missing_packages, collapse = ", "), ". Package akan diinstall. \n")
     install.packages(paste0(missing_packages))
     load.package()
+    cat("Seluruh package telah diinstall dan di-Load.\n")
   } else {
     cat("Seluruh package telah diinstall.\n")
     load.package()
+    cat("Seluruh package telah di-Load.\n")
   }
 }
 
