@@ -22,7 +22,6 @@ cek.package.nya <- function() {
     cat("Package ini belum terinstall:", paste(missing_packages, collapse = ", "), ". Package akan diinstall. \n")
     install.packages(paste0(missing_packages))
     cat("Package " paste0(packages), " telah diinstall\n")
-  }
   } else {
     cat("Seluruh package telah diinstall.\n")
   }
