@@ -1,11 +1,3 @@
-load.package <- function() {
-  library(openxlsx)
-  library(forecast)
-  library(mixOmics)
-  library(tibble)
-  library(ggplot2)
-}
-
 cek.package.nya <- function() {
   packages <- c("openxlsx", "forecast", "mixOmics", "tibble", "ggplot2")
   missing_packages <- packages[!(packages %in% installed.packages()[,"Package"])]
@@ -18,6 +10,14 @@ cek.package.nya <- function() {
     cat("Seluruh package telah diinstall.\n")
     load.package()
   }
+}
+
+load.package <- function() {
+  library(openxlsx)
+  library(forecast)
+  library(mixOmics)
+  library(tibble)
+  library(ggplot2)
 }
 
 pdrb.forecast.arima <- function(data_df) {
@@ -83,18 +83,19 @@ pdrb.forecast.arima <- function(data_df) {
   fitted_df <- data.frame(pdrb_df[, 1:2], fitted_df)
 
   cat("\n", "=================================================================================================================",
-      "\n", "Plot telah disimpan pada ", folder_image,
+      "\n", "Plot has been saved in ", folder_image,
       "\n", "=================================================================================================================")
 
 
 
   cat(" \n \n ============================")
-  cat(" FORECASTING DAN FITTED VALUE TELAH DI SIMPAN ")
+  cat(" FORECASTING AND FITTED VALUE HAS BEEN SAVED ")
   cat("============================")
 
   # Save Output
   return(list(forecastedval = forecasted_df, fittedval = fitted_df))
 }
+
 pdrb.forecast.es <- function(data_df) {
   # INISIASI
   forecasted_df <- data.frame()
@@ -159,11 +160,11 @@ pdrb.forecast.es <- function(data_df) {
   fitted_df <- data.frame(pdrb_df[, 1:2], fitted_df)
 
   cat("\n", "=================================================================================================================",
-      "\n", "Plot telah disimpan pada ", folder_image,
+      "\n", "Plot has been saved in ", folder_image,
       "\n", "=================================================================================================================")
 
    cat(" \n \n ============================")
-  cat(" FORECASTING DAN FITTED VALUE TELAH DI SIMPAN ")
+  cat(" FORECASTING AND FITTED VALUE HAS BEEN SAVED ")
   cat("============================")
 
   # Save Output
@@ -180,6 +181,6 @@ export.hasil <- function(arima.forecastedval, arima.fittedval, es.forecastedval,
   file_path <- file.path(folder_path, "Hasil Forecasting ARIMA dan EXPONENTIAL SMOOTHING.xlsx")
   write.xlsx(savetoexcel, file = file_path)
   cat("\n =================================================================================================================",
-      "\n Excel File telah disimpan pada ", folder_path,
+      "\n Excel File has been saved in ", folder_path,
       "\n =================================================================================================================")
 }
