@@ -1,3 +1,15 @@
+cek.package.nya <- function() {
+  packages <- c("openxlsx", "forecast", "mixOmics", "tibble", "ggplot2")
+  missing_packages <- packages[!(packages %in% installed.packages()[,"Package"])]
+
+  if (length(missing_packages) > 0) {
+    cat("The following packages are missing:", paste(missing_packages, collapse = ", "), "\n")
+  } else {
+    cat("All required packages are installed.\n")
+  }
+}
+
+
 load.package <- function() {
   library(openxlsx)
   library(forecast)

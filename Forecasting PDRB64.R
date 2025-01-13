@@ -1,9 +1,10 @@
-# Install Package (JIKA BELUM)
-install.packages(c("ggplot2", "forecast", "openxlsx", "tibble", "BiocManager", "devtools"))
-library(BiocManager)
-BiocManager::install("mixOmics")
-library("devtools")
+# Install Package Forecasting PDRB
+install.packages("devtools")
 devtools::install_github("dulmaj12id/ForecastPDRB64")
+
+# Check Pakcage yang dibutuhkan
+cek.package.nya()
+# Install Package yang belum tersedia dengan fungsi instal.package("nama package")
 
 
 # Library Loading
