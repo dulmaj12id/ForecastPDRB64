@@ -8,7 +8,7 @@ load.package <- function() {
 
 cek.package.nya <- function() {
   packages <- c("openxlsx", "forecast", "tibble", "ggplot2")
-  packages1 <- "mixOmics"
+  packages1 <- c("mixOmics")
   missing_packages <- packages[!(packages %in% installed.packages()[,"Package"])]
   missing_packages1 <- packages1[!(packages1 %in% installed.packages()[,"Package"])]
 
