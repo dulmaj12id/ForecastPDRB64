@@ -12,14 +12,7 @@ cek.package.nya <- function() {
 
   if (length(missing_packages) > 0) {
     cat("Package ini belum terinstall:", paste(missing_packages, collapse = ", "), ". Package akan diinstall. \n")
-    for (i in 1:length(missing_package)) {
-      if (missing_packages[i] <- "mixOmics"){
-        install.packages("BiocManager")
-        BiocManager::install("mixOmics")
-      } else {
-        install.packages(paste0(missing_packages[i]))
-      }
-    }
+    install.packages(paste0(missing_packages))
     load.package()
     cat("Seluruh package telah diinstall dan di-Load.\n")
   } else {
