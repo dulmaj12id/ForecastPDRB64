@@ -7,18 +7,13 @@ Gunakan file *.ipynb pada: https://github.com/dulmaj12id/ForecastPDRB64-Notebook
 
 ## Cara Penggunaan
 1. Siapkan template excel sesuai contoh
-2. Gunakan file `Jalan dengan ini.R` untuk menjalankan proses estimasi. File `Jalan dengan ini.R` dapat diunduh pada: [Forecasting PDRB64.R](https://github.com/dulmaj12id/ForecastPDRB64/blob/main/Forecasting%20PDRB64.R)
-
-3. Install package yang dibutuhkan:
-  `install.packages(c("ggplot2", "forecast", "openxlsx", "tibble", "BiocManager", "devtools"))`
-  `library(BiocManager)`
-  `BiocManager::install("mixOmics")`
-  `library("devtools")`
-  `devtools::install_github("dulmaj12id/ForecastPDRB64")`
-
-  ![image](https://github.com/user-attachments/assets/1fc0d6c8-8fe8-4ecb-9eaa-cde46bd3f5df)
-
-4. Jalankan perintah R secara urut
-5. Perhatikan setiap akan memilih/menyimpan file plot, model, dan excel.
-   ![image](https://github.com/user-attachments/assets/1adb950e-838c-4c7c-9047-7218c66081cd)
-  
+2. Gunakan file `Forecasting PDRB64.R` untuk menjalankan proses estimasi. File `Forecasting PDRB64.R` dapat diunduh pada: [Forecasting PDRB64.R](https://github.com/dulmaj12id/ForecastPDRB64/blob/main/Forecasting%20PDRB64.R)
+3. Perintah pertama hanya perlu dijalankan saat pertama kali install Packagenya
+   ![image](https://github.com/user-attachments/assets/d5b0cc78-c36d-47a0-8f30-5db79aca4d2b)
+4. Siapkan folder untuk menyimpan
+   a. Plot
+   b. Model
+   c. Excel Output R
+   Masing-masing file plot dan model akan dibedakan untuk model ARIMA dan model Exponential Smoothing
+5. Excel Output R berisi nilai hasing Forecasting dan Fitted Value
+6. Masukkan nilai Forecasting pada template excel
