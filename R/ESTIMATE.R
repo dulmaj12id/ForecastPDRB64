@@ -174,7 +174,7 @@ cat.final <- function(){
   grid <- expand.grid(3, 2)
   df <- data.frame(x = grid[, 1],
                  y = grid[, 2],
-                 image = "mouth")
+                 image = "pop")
   ggplot(df) +
   geom_cat(aes(x, y, cat = image), size = 15) +
     xlim(c(0.25, 5.5)) + 
