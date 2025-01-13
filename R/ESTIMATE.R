@@ -108,7 +108,6 @@ pdrb.forecast.es <- function(data_df) {
   fitted_df <- data.frame()
   fitted_val <- data.frame()
   plot_list <- list()
-  folder_image <- choose.dir(default = "", caption = "Pilih folder untuk menyimpan Exponential Smoothing Plot file")
 
   # Melakukan forecasting untuk setiap variabel
   for (i in 1:ncol(data_df)) {
@@ -137,7 +136,7 @@ pdrb.forecast.es <- function(data_df) {
     }
 
     # Menyimpan hasil forecast dalam plot
-    mypath <- file.path(folder_image, paste0("Exp Smoothing - ", i, ". ", colnames(data_df[i]), ".png"))
+    mypath <- file.path("3. Exp Smoothing Plot dan Model", paste0("Exp Smoothing - ", i, ". ", colnames(data_df[i]), ".png"))
     png(mypath)
     plot_list[i] <- plot(forecasted_values, col = "red", main = names(fitted_val[i + 2]), ylab = "PDRB", xlab = "Triwulan")
     plot_list[i] <- lines(forecasted_values$fitted, pch = 20, col = "green")
@@ -185,10 +184,7 @@ export.hasil <- function(arima.forecastedval, arima.fittedval, es.forecastedval,
   savetoexcel <- list("Forecast ARIMA" = arima.forecastedval, "Fitted ARIMA" = arima.fittedval,
                       "Forecast Exp Smoothing" = es.forecastedval, "Fitted Exp Smoothing" = es.fittedval)
 
-  # Open a window to choose the folder to save the file
-  folder_path <- choose.dir(default = "", caption = "Pilih folder untuk menyimpan Excel file hasil forecasting")
-
-  file_path <- file.path(folder_path, "Hasil Forecasting ARIMA dan EXPONENTIAL SMOOTHING.xlsx")
+  file_path <- file.path("4. Output R/Hasil Forecasting ARIMA dan EXPONENTIAL SMOOTHING.xlsx")
   write.xlsx(savetoexcel, file = file_path)
   cat("\n =================================================================================================================",
       "\n File Excel Forcasted Value dan Fitted Value telah disimpan di ", folder_path,
