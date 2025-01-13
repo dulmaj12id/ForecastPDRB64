@@ -6,6 +6,7 @@ devtools::install_github("dulmaj12id/ForecastPDRB64")
 
 library(ForecastPDRB64)
 
+
 # Check Pakcage yang dibutuhkan
 ForecastPDRB64::cek.package.nya()
 # Install Package yang belum tersedia dengan fungsi instal.package("nama package")
