@@ -92,16 +92,6 @@ pdrb.forecast.arima <- function(data_df) {
   names(fitted_df) <- names(data_df)
   fitted_df <- data.frame(pdrb_df[, 1:2], fitted_df)
 
-  cat("\n", "=================================================================================================================",
-      "\n", "Plot has been saved in ", folder_image,
-      "\n", "=================================================================================================================")
-
-
-
-  cat(" \n \n ============================")
-  cat(" FORECASTING AND FITTED VALUE HAS BEEN SAVED ")
-  cat("============================")
-
   # Save Output
   return(list(forecastedval = forecasted_df, fittedval = fitted_df))
 }
@@ -169,14 +159,6 @@ pdrb.forecast.es <- function(data_df) {
   names(fitted_df) <- names(data_df)
   fitted_df <- data.frame(pdrb_df[, 1:2], fitted_df)
 
-  cat("\n", "=================================================================================================================",
-      "\n", "Plot has been saved in ", folder_image,
-      "\n", "=================================================================================================================")
-
-   cat(" \n \n ============================")
-  cat(" FORECASTING AND FITTED VALUE HAS BEEN SAVED ")
-  cat("============================")
-
   # Save Output
   return(list(forecastedval = forecasted_df, fittedval = fitted_df))
 }
@@ -191,6 +173,6 @@ export.hasil <- function(arima.forecastedval, arima.fittedval, es.forecastedval,
   file_path <- file.path(folder_path, "Hasil Forecasting ARIMA dan EXPONENTIAL SMOOTHING.xlsx")
   write.xlsx(savetoexcel, file = file_path)
   cat("\n =================================================================================================================",
-      "\n Excel File has been saved in ", folder_path,
+      "\n File Excel Forcasted Value dan Fitted Value telah disimpan di ", folder_path,
       "\n =================================================================================================================")
 }
