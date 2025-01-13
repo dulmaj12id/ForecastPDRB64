@@ -1,4 +1,5 @@
 load.package <- function() {
+  library(ForecastPDRB64)
   library(openxlsx)
   library(forecast)
   library(mixOmics)
