@@ -16,7 +16,9 @@
    
 4. Perintah pertama hanya perlu dijalankan saat pertama kali install Packagenya
    ![image](https://github.com/user-attachments/assets/d5b0cc78-c36d-47a0-8f30-5db79aca4d2b)
-   
+
+5. Jalankan perintah-perintah selanjutnya secara berurutan   
+
 6. Perhatikan folder pada template untuk menyimpan
 
    `2. Plot dan Model ARIMA` : digunakan saat menyimpan file plot dan model arima
