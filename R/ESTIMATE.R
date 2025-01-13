@@ -11,10 +11,8 @@ cek.package.nya <- function() {
   missing_packages <- packages[!(packages %in% installed.packages()[,"Package"])]
 
   if (length(missing_packages) > 0) {
-    install.packages(c("ggplot2", "forecast", "openxlsx", "tibble", "BiocManager", "devtools"))
-    library(BiocManager)
-    BiocManager::install("mixOmics")
-    load.package()
+    cat("Package ini belum terinstall:", paste(missing_packages, collapse = ", "), ". Package akan diinstall. \n")
+    install.packages(missing_packages)
   } else {
     cat("Seluruh package telah diinstall.\n")
     load.package()
