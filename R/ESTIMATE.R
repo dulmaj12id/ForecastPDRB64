@@ -1,3 +1,11 @@
+load.package <- function() {
+  library(openxlsx)
+  library(forecast)
+  library(mixOmics)
+  library(tibble)
+  library(ggplot2)
+}
+
 cek.package.nya <- function() {
   packages <- c("openxlsx", "forecast", "mixOmics", "tibble", "ggplot2")
   missing_packages <- packages[!(packages %in% installed.packages()[,"Package"])]
@@ -12,7 +20,6 @@ cek.package.nya <- function() {
     load.package()
   }
 }
-
 
 load.package <- function() {
   library(openxlsx)
