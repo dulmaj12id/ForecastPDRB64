@@ -1,7 +1,7 @@
 # ForecastPDRB64
 
 ## Persiapan
-Download Template Excel dan Folder [Template.zip](https://github.com/dulmaj12id/ForecastPDRB64/blob/Utama/Template%20Forecast%20PDRB64.zip)
+Download Template Excel dan Folder [Template Forecast PDRB64.zip](https://github.com/dulmaj12id/ForecastPDRB64/blob/Utama/Template%20Forecast%20PDRB64.zip)
 
 ## Cara Penggunaan
 1. Extract File `Template Forecast PDRB64.zip` pada di masing-masing PC 
