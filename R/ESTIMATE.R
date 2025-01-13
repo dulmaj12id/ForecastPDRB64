@@ -178,7 +178,8 @@ cat.final <- function(){
   ggplot(df) +
   geom_cat(aes(x, y, cat = image), size = 15) +
     xlim(c(0.25, 5.5)) + 
-    ylim(c(0.25, 3.5))
+    ylim(c(0.25, 3.5)) +
+      annotate("text", x = 1, y = 1, label = "Terima Kasih")
 }
 
 export.hasil <- function(arima.forecastedval, arima.fittedval, es.forecastedval, es.fittedval){
