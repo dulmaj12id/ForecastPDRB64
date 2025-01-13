@@ -28,4 +28,4 @@ Download Template Excel dan Folder [Template Forecast PDRB64.zip](https://github
 8. Masukkan nilai Forecasting pada template excel
 
 ## Versi Notebook
-Gunakan project: [ForecastPDRB64-Notebook](https://github.com/dulmaj12id/ForecastPDRB64/blob/Utama/Run%20Codingan%20R/Forecasting%20PDRB.ipynb) jika ingin menjalankan Forecasting melalui Jupyter Notebook.
+Gunakan project: [ForecastPDRB64-Notebook](https://github.com/dulmaj12id/ForecastPDRB64/blob/Utama/Forecasting%20PDRB.ipynb) jika ingin menjalankan Forecasting melalui Jupyter Notebook.
