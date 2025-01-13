@@ -12,19 +12,12 @@ cek.package.nya <- function() {
 
   if (length(missing_packages) > 0) {
     cat("Package ini belum terinstall:", paste(missing_packages, collapse = ", "), ". Package akan diinstall. \n")
-    install.packages(missing_packages)
+    install.packages(paste0(missing_packages))
+    load.package()
   } else {
     cat("Seluruh package telah diinstall.\n")
     load.package()
   }
-}
-
-load.package <- function() {
-  library(openxlsx)
-  library(forecast)
-  library(mixOmics)
-  library(tibble)
-  library(ggplot2)
 }
 
 pdrb.forecast.arima <- function(data_df) {
@@ -102,7 +95,6 @@ pdrb.forecast.arima <- function(data_df) {
   # Save Output
   return(list(forecastedval = forecasted_df, fittedval = fitted_df))
 }
-
 pdrb.forecast.es <- function(data_df) {
   # INISIASI
   forecasted_df <- data.frame()
