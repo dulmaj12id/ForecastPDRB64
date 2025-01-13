@@ -1,7 +1,7 @@
 Package: ForecastPDRB64
 Type: Package
 Title: Forecast PDRB 64
-Version: 1.1.0
+Version: 2.1.0
 Authors@R: c(
     person(
       "Muhammad Abdul Majid",
@@ -10,6 +10,6 @@ Authors@R: c(
     )
   )
 Description: Melakukan estimasi peramalan data pdrb
-License: BPS
+License: Privat
 Encoding: UTF-8
 LazyData: true
