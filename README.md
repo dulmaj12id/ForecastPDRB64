@@ -1,7 +1,7 @@
 # ForecastPDRB64
 
 ## Persiapan
-Download Template Excel dan Folder [Template.zip](https://github.com/dulmaj12id/ForecastPDRB64/blob/Utama/Run%20Codingan%20R/Template%20Forecast%20PDRB64.zip)
+Download Template Excel dan Folder [Template.zip](https://github.com/dulmaj12id/ForecastPDRB64/Run%20Codingan%20R/Template%20Forecast%20PDRB64.zip)
 
 ## Cara Penggunaan
 1. Siapkan excel data sesuai template pada folder `1. Data Input`
