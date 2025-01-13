@@ -9,7 +9,7 @@ Authors@R: c(
       role = c("aut", "cre")
     )
   )
-Description: Melakukan estimasi peramalan data pdrb
+Description: Melakukan estimasi peramalan data PDRB sebagai pendukung penghitungan PDRB Triwulanan
 License: Privat
 Encoding: UTF-8
 LazyData: true
