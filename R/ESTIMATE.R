@@ -69,7 +69,7 @@ pdrb.forecast.arima <- function(data_df) {
     }
 
     # Menyimpan hasil forecast dalam plot
-    mypath <- file.path("2. ARIMA Plot dan Model/", paste0("ARIMA - ", i, ". ", colnames(data_df[i]), ".png"))
+    mypath <- file.path("2. ARIMA Plot dan Model", paste0("ARIMA - ", i, ". ", colnames(data_df[i]), ".png"))
     png(mypath)
     plot_list[i] <- plot(forecasted_values, col = "red", main = names(fitted_val[i + 2]), ylab = "PDRB", xlab = "Triwulan")
     plot_list[i] <- lines(forecasted_values$fitted, pch = 20, col = "green")
