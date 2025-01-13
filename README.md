@@ -22,14 +22,23 @@
 6. Perhatikan folder pada template untuk menyimpan
 
    `2. Plot dan Model ARIMA` : digunakan saat menyimpan file plot dan model arima
+   
+   ![image](https://github.com/user-attachments/assets/e5140b49-43d7-4479-8c2d-005186c991bb)
+   ![image](https://github.com/user-attachments/assets/8131358c-3a99-40e4-999e-506213d8a192)
 
    `3. Plot dan Model Exponential Smoothing` : digunakan saat menyimpan file plot dan model exponential smoothing
 
+   ![image](https://github.com/user-attachments/assets/324a6a02-b6f6-4679-8a35-818b1aef8aa7)
+   ![image](https://github.com/user-attachments/assets/084bf372-fe72-4ec4-bf76-46290d7a561a)
+
    `4. Output R` : digunakan saat menyimpan file excel output rekapan hasil forecasting
 
-7. Excel Output R berisi nilai hasing Forecasting dan Fitted Value dimasukkan pada template di folder `5. Hasil Estimasi`
+   ![image](https://github.com/user-attachments/assets/4d78804d-80d1-4ede-af62-f432a788a1c6)
 
-8. Masukkan nilai Forecasting pada template excel
+
+8. Excel Output R berisi nilai hasing Forecasting dan Fitted Value dimasukkan pada template di folder `5. Hasil Estimasi`
+
+9. Masukkan nilai Forecasting pada template excel
 
 ## Versi Notebook
 Gunakan project: [ForecastPDRB64-Notebook](https://github.com/dulmaj12id/ForecastPDRB64/blob/Utama/Forecasting%20PDRB.ipynb) jika ingin menjalankan Forecasting melalui Jupyter Notebook.
