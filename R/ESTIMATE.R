@@ -3,9 +3,11 @@ cek.package.nya <- function() {
   missing_packages <- packages[!(packages %in% installed.packages()[,"Package"])]
 
   if (length(missing_packages) > 0) {
-    cat("The following packages are missing:", paste(missing_packages, collapse = ", "), "\n")
+    install.packages(c("ggplot2", "forecast", "openxlsx", "tibble", "BiocManager", "devtools"))
+    library(BiocManager)
+    BiocManager::install("mixOmics")
   } else {
-    cat("All required packages are installed.\n")
+    cat("Seluruh package telah diinstall.\n")
   }
 }
 
