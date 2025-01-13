@@ -187,7 +187,7 @@ export.hasil <- function(arima.forecastedval, arima.fittedval, es.forecastedval,
   file_path <- file.path("4. Output R/Hasil Forecasting ARIMA dan EXPONENTIAL SMOOTHING.xlsx")
   write.xlsx(savetoexcel, file = file_path)
   cat("\n =================================================================================================================",
-      "\n File Excel Forcasted Value dan Fitted Value telah disimpan di ", folder_path,
+      "\n File Excel Forcasted Value dan Fitted Value telah disimpan di ", file_path,
       "\n =================================================================================================================")
   cat.final()
 }
