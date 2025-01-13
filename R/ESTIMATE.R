@@ -6,8 +6,10 @@ cek.package.nya <- function() {
     install.packages(c("ggplot2", "forecast", "openxlsx", "tibble", "BiocManager", "devtools"))
     library(BiocManager)
     BiocManager::install("mixOmics")
+    load.package()
   } else {
     cat("Seluruh package telah diinstall.\n")
+    load.package()
   }
 }
 
