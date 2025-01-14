@@ -38,9 +38,18 @@
 
 9. Masukkan nilai Forecasting pada template excel
 
-![](https://media1.tenor.com/m/NZGggjysqjwAAAAC/hehe-not-hehe.gif)
+<p></p>
+<p></p>
+          
+
+<p align="center" width="100%">
+    <img width="33%" src="https://media1.tenor.com/m/NZGggjysqjwAAAAC/hehe-not-hehe.gif">
+</p>
 
 
+<p></p>
+<p></p>
 
 &copy;Muhammad Abdul Majid
 surel.majid@gmail.com
+
