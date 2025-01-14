@@ -11,7 +11,7 @@
 
 2. ```diff
    - PENTING -
-    Siapkan excel data sesuai template pada folder `1. Data Input` pada file `pdrb.xlsx`
+    Siapkan excel data sesuai template pada folder 1. Data Input pada file pdrb.xlsx
    ```
   
 
