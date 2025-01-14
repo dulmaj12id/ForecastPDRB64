@@ -23,4 +23,4 @@ data.pdrb <- pdrb_df[, 3:ncol(pdrb_df)]
 
 # Forecasting PDRB
 # --------------------------------------------------------------------------
-forecast.pdrb.64(data.pdrb)
+suppressWarnings(forecast.pdrb.64(data.pdrb))
