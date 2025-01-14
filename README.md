@@ -9,7 +9,7 @@
 ## Cara Penggunaan
 1. Extract File `Template Forecast PDRB64.zip` pada di masing-masing PC 
 
-2. Siapkan excel data sesuai template pada folder `1. Data Input`
+2. PENTING: Siapkan excel data sesuai template pada folder `1. Data Input`
 
 3. Gunakan file `Forecasting PDRB64.R` untuk menjalankan proses estimasi. File `Forecasting PDRB64.R` dapat diunduh bersamaan dengan file template
 
