@@ -1,6 +1,6 @@
 {
     "id": "4D95B05F",
-    "path": "G:/My Drive/[02] Area/Work/BPS Kaltim/Teknis/2024/Neraca/Neraca - Peramalan PDRB Triwulanan 2024/Making R Package/Package/R/ESTIMATE.R",
+    "path": "G:/My Drive/[02] Area/Work/BPS Kaltim/Teknis/2025/Nerwilis/R Package Forecasting PDRB64/ForecastPDRB64/R/ESTIMATE.R",
     "project_path": "R/ESTIMATE.R",
     "type": "r_source",
     "hash": "0",
@@ -17,11 +17,11 @@
         "scrollLine": "0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1736491007,
+    "lastKnownWriteTime": 1736824605,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1736491007818,
+    "last_content_update": 1736824605,
     "read_only": false,
     "read_only_alternatives": []
 }

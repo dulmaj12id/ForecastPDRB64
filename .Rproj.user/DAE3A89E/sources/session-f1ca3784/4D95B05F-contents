@@ -1,17 +1,48 @@
 load.package <- function() {
+  library(ForecastPDRB64)
   library(openxlsx)
   library(forecast)
   library(mixOmics)
   library(tibble)
   library(ggplot2)
+  library(ggcats)
 }
+
+cek.package.nya <- function() {
+  packages <- c("openxlsx", "forecast", "tibble", "ggplot2")
+  packages1 <- c("mixOmics")
+  packages2 <- c("ggcats")
+  missing_packages <- packages[!(packages %in% installed.packages()[,"Package"])]
+  missing_packages1 <- packages1[!(packages1 %in% installed.packages()[,"Package"])]
+  missing_packages2 <- packages2[!(packages2 %in% installed.packages()[,"Package"])]
+
+  if (length(missing_packages1) > 0) {
+    cat("Package mixOmics belum terinstall. Package akan diinstall. \n")
+    install.packages("BiocManager")
+    library(BiocManager)
+    BiocManager::install("mixOmics")
+    cat("Package mixOmics telah terinstall")
+  } else if (length(missing_packages2) > 0) {
+    cat("Package ggcats belum terinstall. Package akan diinstall. \n")
+    devtools::install_github("R-CoderDotCom/ggcats@main")
+    cat("Package ggcats telah terinstall")
+  } else if (length(missing_packages) > 0) {
+    cat("Package ini belum terinstall:", paste(missing_packages, collapse = ", "), ". Package akan diinstall. \n")
+    install.packages(paste0(missing_packages))
+    cat("Package ", paste(missing_packages, collapse = ", "), " telah diinstall. \n")
+  } else {
+    cat("Seluruh package telah diinstall.\n")
+  }
+  load.package()
+  cat("Seluruh package telah di-Load.\n")
+}
+
 pdrb.forecast.arima <- function(data_df) {
   # INISIASI
   forecasted_df <- data.frame()
   fitted_df <- data.frame()
   fitted_val <- data.frame()
   plot_list <- list()
-  folder_image <- choose.dir(default = "", caption = "Select folder to save the ARIMA Plot file")
 
   # Melakukan forecasting untuk setiap variabel
   for (i in 1:ncol(data_df)) {
@@ -38,7 +69,7 @@ pdrb.forecast.arima <- function(data_df) {
     }
 
     # Menyimpan hasil forecast dalam plot
-    mypath <- file.path(folder_image, paste0("ARIMA - ", i, ". ", colnames(data_df[i]), ".png"))
+    mypath <- file.path("2. ARIMA Plot dan Model", paste0("ARIMA - ", i, ". ", colnames(data_df[i]), ".png"))
     png(mypath)
     plot_list[i] <- plot(forecasted_values, col = "red", main = names(fitted_val[i + 2]), ylab = "PDRB", xlab = "Triwulan")
     plot_list[i] <- lines(forecasted_values$fitted, pch = 20, col = "green")
@@ -67,26 +98,16 @@ pdrb.forecast.arima <- function(data_df) {
   names(fitted_df) <- names(data_df)
   fitted_df <- data.frame(pdrb_df[, 1:2], fitted_df)
 
-  cat("\n", "=================================================================================================================",
-      "\n", "Plot has been saved in ", folder_image,
-      "\n", "=================================================================================================================")
-
-
-
-  cat(" \n \n ============================")
-  cat(" FORECASTING AND FITTED VALUE HAS BEEN SAVED ")
-  cat("============================")
-
   # Save Output
   return(list(forecastedval = forecasted_df, fittedval = fitted_df))
 }
+
 pdrb.forecast.es <- function(data_df) {
   # INISIASI
   forecasted_df <- data.frame()
   fitted_df <- data.frame()
   fitted_val <- data.frame()
   plot_list <- list()
-  folder_image <- choose.dir(default = "", caption = "Select folder to save the Exp Smoothing Plot file")
 
   # Melakukan forecasting untuk setiap variabel
   for (i in 1:ncol(data_df)) {
@@ -115,7 +136,7 @@ pdrb.forecast.es <- function(data_df) {
     }
 
     # Menyimpan hasil forecast dalam plot
-    mypath <- file.path(folder_image, paste0("Exp Smoothing - ", i, ". ", colnames(data_df[i]), ".png"))
+    mypath <- file.path("3. Exp Smoothing Plot dan Model", paste0("Exp Smoothing - ", i, ". ", colnames(data_df[i]), ".png"))
     png(mypath)
     plot_list[i] <- plot(forecasted_values, col = "red", main = names(fitted_val[i + 2]), ylab = "PDRB", xlab = "Triwulan")
     plot_list[i] <- lines(forecasted_values$fitted, pch = 20, col = "green")
@@ -143,30 +164,46 @@ pdrb.forecast.es <- function(data_df) {
   names(fitted_df) <- names(data_df)
   fitted_df <- data.frame(pdrb_df[, 1:2], fitted_df)
 
-  cat("\n", "=================================================================================================================",
-      "\n", "Plot has been saved in ", folder_image,
-      "\n", "=================================================================================================================")
-
-   cat(" \n \n ============================")
-  cat(" FORECASTING AND FITTED VALUE HAS BEEN SAVED ")
-  cat("============================")
-
   # Save Output
   return(list(forecastedval = forecasted_df, fittedval = fitted_df))
 }
 
-export.hasil <- function(arima.forecastedval, arima.fittedval, es.forecastedval, es.fittedval){
-  savetoexcel <- list("Forecast ARIMA" = arima.forecastedval, "Fitted ARIMA" = arima.fittedval,
-                      "Forecast ES" = es.forecastedval, "Fitted ES" = es.fittedval)
-
-  # Open a window to choose the folder to save the file
-  folder_path <- choose.dir(default = "", caption = "Select folder to save the Excel file")
-
-  file_path <- file.path(folder_path, "Hasil Forecasting ARIMA dan EXPONENTIAL SMOOTHING.xlsx")
-  write.xlsx(savetoexcel, file = file_path)
-  cat("\n =================================================================================================================",
-      "\n Excel File has been saved in ", folder_path,
-      "\n =================================================================================================================")
+cat.final <- function(){
+  catlist <- c("bongo", "grumpy", "lil_bub", "maru", "mouth", "pop", "pop_close", "pusheen", "pusheen_pc")
+  grid <- expand.grid(3, 2)
+  df <- data.frame(x = grid[, 1],
+                 y = grid[, 2],
+                 image = sample(catlist, 1))
+  ggplot(df) +
+  geom_cat(aes(x, y, cat = image), size = 15) +
+    xlim(c(0.25, 5.5)) + 
+    ylim(c(0.25, 3.5)) +
+      annotate("text", x = 1, y = 1, label = "Terima Kasih")
 }
 
+export.hasil <- function(arima.forecastedval, arima.fittedval, es.forecastedval, es.fittedval){
+  savetoexcel <- list("Forecast ARIMA" = arima.forecastedval, "Fitted ARIMA" = arima.fittedval,
+                      "Forecast Exp Smoothing" = es.forecastedval, "Fitted Exp Smoothing" = es.fittedval)
 
+  file_path <- file.path("4. Output R/Hasil Forecasting ARIMA dan EXPONENTIAL SMOOTHING.xlsx")
+  write.xlsx(savetoexcel, file = file_path)
+  cat("\n =================================================================================================================",
+      "\n File Excel Forcasted Value dan Fitted Value telah disimpan di ", file_path,
+      "\n =================================================================================================================")
+  cat.final()
+}
+
+forecast.pdrb.64 <- function(data_df){
+  mypath <- file.path("2. ARIMA Plot dan Model/ModelARIMA.txt")
+  sink(mypath)
+  arima <- pdrb.forecast.arima(data.pdrb)
+  sink()
+  
+  mypath <- file.path("3. Exp Smoothing Plot dan Model/ModelExponentialSmoothing.txt")
+  sink(mypath)
+  es <- pdrb.forecast.es(data.pdrb)
+  sink()
+  
+  export.hasil(arima$forecastedval, arima$fittedval,
+              es$forecastedval, es$fittedval)
+}

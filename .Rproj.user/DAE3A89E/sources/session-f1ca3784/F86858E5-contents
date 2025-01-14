@@ -1,0 +1,15 @@
+Package: ForecastPDRB64
+Type: Package
+Title: Forecast PDRB 64
+Version: 2.1.0
+Authors@R: c(
+    person(
+      "Muhammad Abdul Majid",
+      email = "surel.majid@gmail.com",
+      role = c("aut", "cre")
+    )
+  )
+Description: Melakukan estimasi peramalan data PDRB sebagai pendukung penghitungan PDRB Triwulanan
+License: Privat
+Encoding: UTF-8
+LazyData: true
