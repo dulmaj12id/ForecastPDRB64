@@ -38,7 +38,7 @@
 
 9. Masukkan nilai Forecasting pada template excel
 
-![](http://i.imgur.com/OUkLi.gif)
+![](https://media1.tenor.com/m/NZGggjysqjwAAAAC/hehe-not-hehe.gif)
 
 
 
