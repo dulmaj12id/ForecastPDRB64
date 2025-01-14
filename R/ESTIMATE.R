@@ -191,3 +191,18 @@ export.hasil <- function(arima.forecastedval, arima.fittedval, es.forecastedval,
       "\n =================================================================================================================")
   cat.final()
 }
+
+forecast.pdrb.64 <- function(data_df){
+  mypath <- file.path("2. ARIMA Plot dan Model/ModelARIMA.txt")
+  sink(mypath)
+  arima <- pdrb.forecast.arima(data.pdrb)
+  sink()
+  
+  mypath <- file.path("3. Exp Smoothing Plot dan Model/ModelExponentialSmoothing.txt")
+  sink(mypath)
+  es <- pdrb.forecast.es(data.pdrb)
+  sink()
+  
+  export.hasil(arima$forecastedval, arima$fittedval,
+              es$forecastedval, es$fittedval)
+}
