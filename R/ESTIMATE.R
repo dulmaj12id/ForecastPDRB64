@@ -144,7 +144,6 @@ pdrb.forecast.es <- function(data_df) {
     dev.off()
 
     # Mencetak hasil forecast dalam list
-    cat("-----------------------------------------------------------------------", "\n")
     cat(colnames(data_df)[i], "\n")
     cat("-----------------------------------------------------------------------", "\n")
     print(summary(prediksi))
@@ -208,6 +207,7 @@ forecast.pdrb.64 <- function(data_df){
   es <- pdrb.forecast.es(data.pdrb)
   sink()
 
+  cat("-------------------------------------------------------------------------------------- \n")
   cat("Model dan Plot ARIMA disimpan pada folder 2. ARIMA Plot dan Model \n")
   cat("-------------------------------------------------------------------------------------- \n")
   cat("Model dan Plot Exponential Smoothing disimpan pada 3. Exp Smoothing Plot dan Model \n")
