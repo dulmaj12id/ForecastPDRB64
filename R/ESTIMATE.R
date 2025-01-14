@@ -190,6 +190,7 @@ export.hasil <- function(arima.forecastedval, arima.fittedval, es.forecastedval,
 
   file_path <- file.path("4. Output R/Hasil Forecasting ARIMA dan EXPONENTIAL SMOOTHING.xlsx")
   write.xlsx(savetoexcel, file = file_path)
+  cat("-------------------------------------------------------------------------------------- \n")
   cat("File Excel Forcasted Value dan Fitted Value telah disimpan di Folder 4. Output R \n")
   cat("-------------------------------------------------------------------------------------- \n")
 
@@ -208,7 +209,7 @@ forecast.pdrb.64 <- function(data_df){
   sink()
 
   cat("Model dan Plot ARIMA disimpan pada folder 2. ARIMA Plot dan Model \n")
-  cat("-------------------------------------------------------------------------- \n")
+  cat("-------------------------------------------------------------------------------------- \n")
   cat("Model dan Plot Exponential Smoothing disimpan pada 3. Exp Smoothing Plot dan Model \n")
   cat("-------------------------------------------------------------------------------------- \n")
 
