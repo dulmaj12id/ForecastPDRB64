@@ -175,10 +175,13 @@ cat.final <- function(){
                  y = grid[, 2],
                  image = sample(catlist, 1))
   ggplot(df) +
-  geom_cat(aes(x, y, cat = image), size = 15) +
-    xlim(c(0.25, 5.5)) + 
+  geom_cat(aes(x, y, cat = image), size = 10) +
+    xlim(c(0.25, 5.5)) +
     ylim(c(0.25, 3.5)) +
-      annotate("text", x = 1, y = 1, label = "Terima Kasih")
+      annotate("text", x = 3, y = 0.8, size = 12,
+               label = "Terima Kasih", fontface = "bold") +
+      annotate("text", x = 3, y = 3.2, size = 12,
+               label = "Forecasting Telah Selesai", fontface = "bold")
 }
 
 export.hasil <- function(arima.forecastedval, arima.fittedval, es.forecastedval, es.fittedval){
@@ -187,9 +190,9 @@ export.hasil <- function(arima.forecastedval, arima.fittedval, es.forecastedval,
 
   file_path <- file.path("4. Output R/Hasil Forecasting ARIMA dan EXPONENTIAL SMOOTHING.xlsx")
   write.xlsx(savetoexcel, file = file_path)
-  cat("\n =================================================================================================================",
-      "\n File Excel Forcasted Value dan Fitted Value telah disimpan di ", file_path,
-      "\n =================================================================================================================")
+  cat("File Excel Forcasted Value dan Fitted Value telah disimpan di Folder 4. Output R \n")
+  cat("-------------------------------------------------------------------------------------- \n")
+
   cat.final()
 }
 
@@ -198,12 +201,17 @@ forecast.pdrb.64 <- function(data_df){
   sink(mypath)
   arima <- pdrb.forecast.arima(data.pdrb)
   sink()
-  
+
   mypath <- file.path("3. Exp Smoothing Plot dan Model/ModelExponentialSmoothing.txt")
   sink(mypath)
   es <- pdrb.forecast.es(data.pdrb)
   sink()
-  
+
+  cat("Model dan Plot ARIMA disimpan pada folder 2. ARIMA Plot dan Model \n")
+  cat("-------------------------------------------------------------------------- \n")
+  cat("Model dan Plot Exponential Smoothing disimpan pada 3. Exp Smoothing Plot dan Model \n")
+  cat("-------------------------------------------------------------------------------------- \n")
+
   export.hasil(arima$forecastedval, arima$fittedval,
               es$forecastedval, es$fittedval)
 }
