@@ -16,7 +16,9 @@
    ![image](https://github.com/user-attachments/assets/2e6bec74-07d9-4eef-be20-8766c3eeb2be)
    
 4. Perintah pertama hanya perlu dijalankan saat pertama kali install Packagenya
-   ![image](https://github.com/user-attachments/assets/d5b0cc78-c36d-47a0-8f30-5db79aca4d2b)
+
+   ![image](https://github.com/user-attachments/assets/80330149-58bd-4027-8ed5-e125cc5505a1)
+
 
 5. Jalankan perintah-perintah selanjutnya secara berurutan   
 
