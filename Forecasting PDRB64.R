@@ -1,10 +1,10 @@
 # ==========================================================================
+#Penjelasan
+browseURL("https://github.com/idabdulmaj/ForecastPDRB64/blob/Utama/README.md")
+
 # Install Package Forecasting PDRB (HANYA UNTUK PERTAMA)
 install.packages("devtools")
 devtools::install_github("idabdulmaj/ForecastPDRB64")
-
-#Penjelasan
-browseURL("https://github.com/idabdulmaj/ForecastPDRB64/blob/Utama/README.md")
 # ==========================================================================
 
 
