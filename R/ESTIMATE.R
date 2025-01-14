@@ -169,10 +169,11 @@ pdrb.forecast.es <- function(data_df) {
 }
 
 cat.final <- function(){
+  catlist <- c("bongo", "grumpy", "lil_bub", "maru", "mouth", "pop", "pop_close", "pusheen", "pusheen_pc")
   grid <- expand.grid(3, 2)
   df <- data.frame(x = grid[, 1],
                  y = grid[, 2],
-                 image = "maru")
+                 image = sample(catlist, 1))
   ggplot(df) +
   geom_cat(aes(x, y, cat = image), size = 15) +
     xlim(c(0.25, 5.5)) + 
