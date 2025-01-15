@@ -10,6 +10,6 @@ Authors@R: c(
     )
   )
 Description: Melakukan estimasi peramalan data PDRB sebagai pendukung penghitungan PDRB Triwulanan
-License: Privat
+License: Private
 Encoding: UTF-8
 LazyData: true
