@@ -71,7 +71,7 @@ pdrb.forecast.arima <- function(data_df) {
     # Menyimpan hasil forecast dalam plot
     mypath <- file.path("2. ARIMA Plot dan Model", paste0("ARIMA - ", i, ". ", colnames(data_df[i]), ".png"))
     png(mypath)
-    plot_list[i] <- plot(forecasted_values, col = "red", main = names(fitted_val[i + 2]), ylab = "PDRB", xlab = "Triwulan")
+    plot_list[i] <- plot(forecasted_values, col = "red", main = paste0(colnames(data_df[i])), ylab = "PDRB", xlab = "Triwulan ke")
     plot_list[i] <- lines(forecasted_values$fitted, pch = 20, col = "green")
     plot_list[i] <- legend("topleft", c("Actual data", "Smoothed data"), lty = 8, col = c("green", "red"), cex = 0.8)
     dev.off()
@@ -138,13 +138,12 @@ pdrb.forecast.es <- function(data_df) {
     # Menyimpan hasil forecast dalam plot
     mypath <- file.path("3. Exp Smoothing Plot dan Model", paste0("Exp Smoothing - ", i, ". ", colnames(data_df[i]), ".png"))
     png(mypath)
-    plot_list[i] <- plot(forecasted_values, col = "red", main = names(fitted_val[i + 2]), ylab = "PDRB", xlab = "Triwulan")
+    plot_list[i] <- plot(forecasted_values, col = "red", main = paste0(colnames(data_df[i])), ylab = "PDRB", xlab = "Triwulan ke")
     plot_list[i] <- lines(forecasted_values$fitted, pch = 20, col = "green")
     plot_list[i] <- legend("topleft", c("Actual data", "Smoothed data"), lty = 8, col = c("green", "red"), cex = 0.8)
     dev.off()
 
     # Mencetak hasil forecast dalam list
-    cat("-----------------------------------------------------------------------", "\n")
     cat(colnames(data_df)[i], "\n")
     cat("-----------------------------------------------------------------------", "\n")
     print(summary(prediksi))
@@ -190,6 +189,7 @@ export.hasil <- function(arima.forecastedval, arima.fittedval, es.forecastedval,
 
   file_path <- file.path("4. Output R/Hasil Forecasting ARIMA dan EXPONENTIAL SMOOTHING.xlsx")
   write.xlsx(savetoexcel, file = file_path)
+
   cat("File Excel Forcasted Value dan Fitted Value telah disimpan di Folder 4. Output R \n")
   cat("-------------------------------------------------------------------------------------- \n")
 
@@ -207,8 +207,9 @@ forecast.pdrb.64 <- function(data_df){
   es <- pdrb.forecast.es(data.pdrb)
   sink()
 
+  cat("-------------------------------------------------------------------------------------- \n")
   cat("Model dan Plot ARIMA disimpan pada folder 2. ARIMA Plot dan Model \n")
-  cat("-------------------------------------------------------------------------- \n")
+  cat("-------------------------------------------------------------------------------------- \n")
   cat("Model dan Plot Exponential Smoothing disimpan pada 3. Exp Smoothing Plot dan Model \n")
   cat("-------------------------------------------------------------------------------------- \n")
 

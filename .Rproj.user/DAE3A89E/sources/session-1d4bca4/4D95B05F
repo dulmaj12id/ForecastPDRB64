@@ -3,7 +3,7 @@
     "path": "G:/My Drive/[02] Area/Work/BPS Kaltim/Teknis/2025/Nerwilis/R Package Forecasting PDRB64/ForecastPDRB64/R/ESTIMATE.R",
     "project_path": "R/ESTIMATE.R",
     "type": "r_source",
-    "hash": "103549671",
+    "hash": "0",
     "contents": "",
     "dirty": false,
     "created": 1736408605323.0,
@@ -13,15 +13,15 @@
         "tempName": "Untitled1",
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "182,37",
-        "scrollLine": "164"
+        "cursorPosition": "185,12",
+        "scrollLine": "39"
     },
-    "folds": "",
-    "lastKnownWriteTime": 1736826092,
+    "folds": "0|28|8|0|\n10|31|37|0|\n39|42|102|0|\n104|39|167|0|\n",
+    "lastKnownWriteTime": 1736901382,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1736826092920,
+    "last_content_update": 1736902936388,
     "read_only": false,
     "read_only_alternatives": []
 }

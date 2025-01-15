@@ -1,0 +1,12 @@
+\name{Load Package}
+\alias{Load Package}
+\title{Load Package}
+\usage{
+load.package()
+}
+\description{
+Melakukan pemanggilan kepada package yang dibutuhkan, antara lain: "openxlsx", "forecast", "tibble", "ggplot2", "mixOmics", dan "ggcats".
+}
+\examples{
+load.package()
+}
